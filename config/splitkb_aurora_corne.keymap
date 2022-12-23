@@ -12,19 +12,30 @@
 
 #define NAV 1
 #define MEDIA 2
+#define NUM 3
+#define FUN 4
 
 / {
         behaviors {
                 hm: homerow_mods {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "HOMEROW_MODS";
-                    #binding-cells = <2>;
-                    tapping-term-ms = <200>;
-                    quick-tap-ms = <0>;
-                    flavor = "balanced";
-                    bindings = <&kp>, <&kp>;
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <0>;
+                        flavor = "balanced";
+                        bindings = <&kp>, <&kp>;
                 };
             }
+
+        combos {
+                compatible = "zmk,combos";
+                         combo_fun_layer {
+                                 timeout-ms = <50>;
+                                 key-positions = <19 20>;
+                                 bindings = <&lt FUN>;
+                         };
+        }
 
         keymap {
                 compatible = "zmk,keymap";
@@ -40,7 +51,7 @@
 &kp LCTRL   &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp RET
 &kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp RSHIFT
 
-                     &lt NAV ESC &lt NAV SPC   &lt NAV TAB    &lt NAV RET   &lt NAV BSPC  &lt MEDIA DEL
+                     &lt NAV ESC &lt NUM SPC   &lt NAV TAB    &lt NAV RET   &lt NAV BSPC  &lt MEDIA DEL
                         >;
                 };
 
@@ -61,6 +72,26 @@
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &out OUT_TOG            &trans  &trans      &trans      &kp RALT    &trans      &trans
 
                                             &kp C_MUTE      &kp C_PLAY_PAUSE    &kp C_STOP              &trans  &trans      &trans
+                        >;
+                };
+
+                numbers_layer {
+                        bindings = <
+&trans  &trans      &trans       &trans     &trans      &trans              &kp LBKT          &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp RBKT    &trans
+&trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp EQL           &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp SEMI    &trans
+&trans  &trans      &kp RALT     &trans     &trans      &trans              &kp BSLH          &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
+
+                                 &trans     &trans      &trans              &kp MINUS         &kp NUM_0         &kp DOT
+                        >;
+                };
+
+                functions_layer {
+                        bindings = <
+&trans  &trans      &trans      &trans      &trans      &trans              &kp PSCRN         &kp F7            &kp F8            &kp F9            &kp F12     &trans
+&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &kp SLCK          &kp F4            &kp F5            &kp F6            &kp F11     &trans
+&trans  &trans      &kp RALT    &trans      &trans      &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
+
+                                &trans      &trans      &trans              &kp TAB           &kp SPC           &kp K_APP
                         >;
                 };
 
