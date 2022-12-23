@@ -62,7 +62,7 @@
                         bindings = <
 &trans  &trans      &trans      &trans      &trans      &trans              &trans          &trans     &trans      &trans       &trans  &trans
 &trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans  &kp RALT    &trans      &trans      &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans  &kp RALT    &trans      &trans      &to NAV     &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                 &trans      &trans      &trans              &kp RET         &kp BSPC    &kp DEL
                         >;
@@ -72,7 +72,7 @@
                         bindings = <
 &trans      &trans          &trans          &trans          &trans              &trans                  &trans  &trans      &trans      &trans      &trans      &trans
 &trans      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT          &ext_power EP_TOG       &trans  &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &trans
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &out OUT_TOG            &trans  &trans      &trans      &kp RALT    &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &out OUT_TOG            &trans  &to MEDIA   &trans      &kp RALT    &trans      &trans
 
                                             &kp C_MUTE      &kp C_PLAY_PAUSE    &kp C_STOP              &trans  &trans      &trans
                         >;
@@ -84,7 +84,7 @@
                         bindings = <
 &trans  &trans      &trans       &trans     &trans      &trans              &kp LBKT          &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp RBKT    &trans
 &trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp EQL           &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp SEMI    &trans
-&trans  &trans      &kp RALT     &trans     &trans      &trans              &kp BSLH          &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
+&trans  &trans      &kp RALT     &trans     &to NUM     &trans              &kp BSLH          &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
 
                                  &trans     &trans      &trans              &kp MINUS         &kp NUM_0         &kp DOT
                         >;
@@ -94,7 +94,7 @@
                         bindings = <
 &trans  &trans      &trans      &trans      &trans      &trans              &kp PSCRN         &kp F7            &kp F8            &kp F9            &kp F12     &trans
 &trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &kp SLCK          &kp F4            &kp F5            &kp F6            &kp F11     &trans
-&trans  &trans      &kp RALT    &trans      &trans      &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
+&trans  &trans      &kp RALT    &trans      &to FUN     &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
 
                                 &trans      &trans      &trans              &kp TAB           &kp SPC           &kp K_APP
                         >;
@@ -104,7 +104,7 @@
                         bindings = <
 &trans  &kp LBRC    &kp AMPS    &kp ASTRK   &kp UNDER   &kp RBRC            &trans      &trans      &trans      &trans          &trans    &trans
 &trans  &kp COLON   &kp DLLR    &kp PRCT    &kp CRRT    &kp PLUS            &trans      &kp LSHFT   &kp LCTRL   &kp LALT        &kp LGUI  &trans
-&trans  &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE            &trans      &trans      &trans      &kp RALT        &trans    &trans
+&trans  &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE            &trans      &to SYM     &trans      &kp RALT        &trans    &trans
 
                                 &trans      &kp LPAR    &kp RPAR            &trans      &trans      &trans
 
