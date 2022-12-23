@@ -14,6 +14,7 @@
 #define MEDIA 2
 #define NUM 3
 #define FUN 4
+#define SYM 5
 
 / {
         behaviors {
@@ -51,7 +52,7 @@
 &kp LCTRL   &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp RET
 &kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp RSHIFT
 
-                     &lt NAV ESC &lt NUM SPC   &lt NAV TAB    &lt NAV RET   &lt NAV BSPC  &lt MEDIA DEL
+                             &lt NAV ESC    &lt NAV SPC   &lt NUM TAB   &lt NAV RET   &lt SYM BSPC  &lt MEDIA DEL
                         >;
                 };
 
@@ -92,6 +93,17 @@
 &trans  &trans      &kp RALT    &trans      &trans      &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
 
                                 &trans      &trans      &trans              &kp TAB           &kp SPC           &kp K_APP
+                        >;
+                };
+
+                symbols_layer {
+                        bindings = <
+&trans  &kp LBRC    &kp AMPS    &kp ASTRK   &kp UNDER   &kp RBRC            &trans      &trans      &trans      &trans          &trans    &trans
+&trans  &kp COLON   &kp DLLR    &kp PRCT    &kp CRRT    &kp PLUS            &trans      &kp LSHFT   &kp LCTRL   &kp LALT        &kp LGUI  &trans
+&trans  &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE            &trans      &trans      &trans      &kp RALT        &trans    &trans
+
+                                &trans      &kp LPAR    &kp RPAR            &trans      &trans      &trans
+
                         >;
                 };
 
