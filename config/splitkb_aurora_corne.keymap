@@ -26,7 +26,7 @@
                         flavor = "balanced";
                         bindings = <&kp>, <&kp>;
                 };
-            }
+            };
 
         combos {
                 compatible = "zmk,combos";
@@ -35,7 +35,7 @@
                                  key-positions = <19 20>;
                                  bindings = <&lt FUN>;
                          };
-        }
+        };
 
         keymap {
                 compatible = "zmk,keymap";
