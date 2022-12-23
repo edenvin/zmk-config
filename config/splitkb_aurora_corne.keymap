@@ -33,7 +33,7 @@
                          combo_fun_layer {
                                  timeout-ms = <50>;
                                  key-positions = <19 20>;
-                                 bindings = <&lt FUN>;
+                                 bindings = <&mo FUN>;
                          };
         };
 
