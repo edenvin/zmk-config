@@ -14,6 +14,18 @@
 #define MEDIA 2
 
 / {
+        behaviors {
+                hm: homerow_mods {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_MODS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <0>;
+                    flavor = "balanced";
+                    bindings = <&kp>, <&kp>;
+                };
+            }
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -25,8 +37,8 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 &kp ESC     &kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp BSPC
-&kp LCTRL   &mt LGUI A  &mt LALT O  &mt LCTRL E &mt LSHFT U &kp I       &kp D   &mt LSHFT H &mt LCTRL T &mt LALT N  &mt LGUI S  &kp RET
-&kp LSHIFT  &kp SLASH   &mt RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &mt RALT V  &kp Z       &kp RSHIFT
+&kp LCTRL   &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp RET
+&kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp RSHIFT
 
                      &lt NAV ESC &lt NAV SPC   &lt NAV TAB    &lt NAV RET   &lt NAV BSPC  &lt MEDIA DEL
                         >;
