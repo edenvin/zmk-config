@@ -32,7 +32,7 @@
                 compatible = "zmk,combos";
                          combo_fun_layer {
                                  timeout-ms = <50>;
-                                 key-positions = <19 20>;
+                                 key-positions = <37 38>;
                                  bindings = <&mo FUN>;
                          };
         };
