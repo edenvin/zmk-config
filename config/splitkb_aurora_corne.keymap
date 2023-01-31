@@ -52,7 +52,7 @@
 &kp LCTRL   &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp RET
 &kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp RSHIFT
 
-                             &kp C_PLAY_PAUSE   &lt NAV SPC   &lt NUM TAB   &lt NAV RET   &lt SYM BSPC  &lt MEDIA DEL
+                             &kp C_PLAY_PAUSE   &lt NAV BSPC   &lt NUM DEL   &lt NAV RET   &lt SYM SPC  &lt MEDIA TAB
                         >;
 
                         sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -64,7 +64,7 @@
 &trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &kp RALT    &trans      &trans      &tog NAV    &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                &trans      &trans      &trans              &kp RET         &kp BSPC    &kp DEL
+                                &trans      &trans      &trans              &kp RET         &kp SPC    &kp TAB
                         >;
                 };
 
