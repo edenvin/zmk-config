@@ -49,10 +49,10 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 &kp ESC     &kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp BSPC
-&kp LCTRL   &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp RET
+&lt NAV ESC &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp MINUS
 &kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp RSHIFT
 
-                             &kp C_PLAY_PAUSE   &lt NAV RET   &lt NUM TAB   &lt NAV BSPC   &lt SYM SPC  &lt MEDIA DEL
+                             &kp C_PLAY_PAUSE   &lt NAV SPC   &lt NUM RET   &lt NAV BSPC   &lt SYM SPC  &lt MEDIA TAB
                         >;
 
                         sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -64,7 +64,7 @@
 &trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &kp RALT    &trans      &trans      &tog NAV    &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                &trans      &trans      &trans              &kp RET         &kp SPC    &kp TAB
+                                &trans      &trans      &trans              &kp DEL         &kp SPC    &kp TAB
                         >;
                 };
 
@@ -82,11 +82,11 @@
 
                 numbers_layer {
                         bindings = <
-&trans  &trans      &trans       &trans     &trans      &trans              &kp LBKT          &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp RBKT    &trans
-&trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp EQL           &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp SEMI    &trans
-&trans  &trans      &kp RALT     &trans     &tog NUM    &trans              &kp BSLH          &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
+&trans  &trans      &trans       &trans     &trans      &trans              &kp EQL          &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp BSLH    &trans
+&trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp ASTRK        &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp SEMI    &trans
+&trans  &trans      &kp RALT     &trans     &tog NUM    &trans              &kp MINUS        &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
 
-                                 &trans     &trans      &trans              &kp MINUS         &kp NUM_0         &kp DOT
+                                 &trans     &trans      &trans              &kp PLUS          &kp NUM_0         &kp DOT
                         >;
                 };
 
@@ -96,17 +96,17 @@
 &trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &kp SLCK          &kp F4            &kp F5            &kp F6            &kp F11     &trans
 &trans  &trans      &kp RALT    &trans      &tog FUN    &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
 
-                                &trans      &trans      &trans              &kp TAB           &kp SPC           &kp K_APP
+                                &trans      &trans      &trans              &kp BSPC           &kp SPC           &kp K_APP
                         >;
                 };
 
                 symbols_layer {
                         bindings = <
-&trans  &kp LBRC    &kp AMPS    &kp ASTRK   &kp UNDER   &kp RBRC            &trans      &trans      &trans      &trans          &trans    &trans
-&trans  &kp COLON   &kp DLLR    &kp PRCT    &kp CRRT    &kp PLUS            &trans      &kp LSHFT   &kp LCTRL   &kp LALT        &kp LGUI  &trans
-&trans  &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp PIPE            &trans      &tog SYM    &trans      &kp RALT        &trans    &trans
+&trans  &kp AMPS    &kp LBKT    &kp RBKT    &kp CRRT    &kp ASTRK           &trans      &trans      &trans      &trans          &trans    &trans
+&trans  &kp DLLR    &kp LPAR    &kp RPAR    &kp UNDER   &kp PRCT            &trans      &kp LSHFT   &kp LCTRL   &kp LALT        &kp LGUI  &trans
+&trans  &kp EXCL    &kp TILDE   &kp HASH    &kp AT      &kp PIPE            &trans      &tog SYM    &trans      &kp RALT        &trans    &trans
 
-                                &trans      &kp LPAR    &kp RPAR            &trans      &trans      &trans
+                                &trans      &kp COLON   &kp SEMI            &trans      &trans      &trans
 
                         >;
 
