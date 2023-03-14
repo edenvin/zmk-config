@@ -24,7 +24,7 @@
                         compatible = "zmk,behavior-hold-tap";
                         label = "HOMEROW_MODS";
                         #binding-cells = <2>;
-                        tapping-term-ms = <150>;
+                        tapping-term-ms = <200>;
                         quick-tap-ms = <0>;
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
@@ -35,7 +35,7 @@
                 compatible = "zmk,combos";
                          combo_fun_layer {
                                  timeout-ms = <50>;
-                                 key-positions = <37 38>;
+                                 key-positions = <0 12>;
                                  bindings = <&mo FUN>;
                          };
         };
@@ -50,11 +50,11 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-&kp ESC     &kp SQT  &kp COMMA   &kp DOT     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp BSPC
+&lt NUM TAB     &kp SQT  &kp COMMA   &kp DOT     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp BSPC
 &lt NAV ESC &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp MINUS
-&kp LSHIFT  &kp SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &kp LSHIFT
+&kp LSHIFT  &hm LCTRL SLASH   &hm RALT Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &hm RALT V  &kp Z       &hm LSHIFT TILDE
 
-                             &kp C_PLAY_PAUSE   &lt NAV SPC   &lt NUM RET   &lt NAV BSPC   &lt SYM SPC  &lt MEDIA TAB
+                             &kp C_PLAY_PAUSE   &kp LALT   &hm LGUI RET   &lt NAV RET   &lt SYM SPC  &lt MEDIA BSPC
                         >;
 
                         sensor-bindings = <&inc_dec_kp UP DOWN>;
