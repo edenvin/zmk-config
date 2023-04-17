@@ -1,114 +1,113 @@
-#include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/modifiers.h>
 
-//#define SE_SECT KC_GRV  // §
-//#define SE_PLUS KC_MINS // +
-//#define SE_ACUT KC_EQL  // ´ (dead)
-//#define SE_ARNG KC_LBRC // Å
-//#define SE_DIAE KC_RBRC // ¨ (dead)
-#define SE_ODIA SEMI // Ö
-#define SE_ADIA SQT // Ä
-#define SE_QUOT NUHS // '
-//#define SE_LABK KC_NUBS // <
-//#define SE_MINS KC_SLSH // -
+// #define S_SECT KC_GRV  // §
+#define S_PLUS MINUS  // +
+#define S_ACUT EQUAL  // ´ (dead)
+#define S_ARNG LBKT   // Å
+#define S_DIAE RBKT   // ¨ (dead)
+#define S_ODIA SEMI   // Ö
+#define S_ADIA SQT    // Ä
+#define S_QUOT NUHS   // '
+#define S_LT NUBS     // <
+#define S_MINUS SLASH // -
 
-//#define SE_DEG S(SE_SECT)  // °
-//#define SE_EXLM S(SE_1)    // !
-//#define SE_DQUO S(SE_2)    // "
-//#define SE_HASH S(SE_3)    // #
-//#define SE_EURO S(SE_4)    // €
-//#define SE_PERC S(SE_5)    // %
-//#define SE_AMPR S(SE_6)    // &
-//#define SE_SLSH S(SE_7)    // /
-//#define SE_LPRN S(SE_8)    // (
-//#define SE_RPRN S(SE_9)    // )
-//#define SE_EQL  S(SE_0)    // =
-//#define SE_QUES S(SE_PLUS) // ?
-//#define SE_GRV  S(SE_ACUT) // `
-//#define SE_CIRC S(SE_DIAE) // ^ (dead)
-//#define SE_ASTR S(SE_QUOT) // *
-//#define SE_RABK S(SE_LABK) // >
-//#define SE_SCLN S(SE_COMM) // ;
-//#define SE_COLN S(SE_DOT)  // :
-//#define SE_UNDS S(SE_MINS) // _
-//#define SE_PILC A(SE_SECT) // ¶
-//#define SE_COPY A(SE_1)    // ©
-//#define SE_AT   A(SE_2)    // @
-//#define SE_PND  A(SE_3)    // £
-//#define SE_DLR  A(SE_4)    // $
-//#define SE_INFN A(SE_5)    // ∞
-//#define SE_PIPE A(SE_7)    // |
-//#define SE_LBRC A(SE_8)    // [
-//#define SE_RBRC A(SE_9)    // ]
-//#define SE_AEQL A(SE_0)    // ≈
-//#define SE_PLMN A(SE_PLUS) // ±
-//#define SE_BULT A(SE_Q)    // •
-//#define SE_OMEG A(SE_W)    // Ω
-//#define SE_EACU A(SE_E)    // É
-//#define SE_REGD A(SE_R)    // ®
-//#define SE_DAGG A(SE_T)    // †
-//#define SE_MICR A(SE_Y)    // µ
-//#define SE_UDIA A(SE_U)    // Ü
-//#define SE_DLSI A(SE_I)    // ı
-//#define SE_OE   A(SE_O)    // Œ
-//#define SE_PI   A(SE_P)    // π
-//#define SE_DOTA A(SE_ARNG) // ˙
-//#define SE_TILD A(SE_DIAE) // ~ (dead)
-//#define SE_APPL A(SE_A)    //  (Apple logo)
-//#define SE_SS   A(SE_S)    // ß
-//#define SE_PDIF A(SE_D)    // ∂
-//#define SE_FHK  A(SE_F)    // ƒ
-//#define SE_CEDL A(SE_G)    // ¸
-//#define SE_OGON A(SE_H)    // ˛
-//#define SE_SQRT A(SE_J)    // √
-//#define SE_FORD A(SE_K)    // ª
-//#define SE_FI   A(SE_L)    // ﬁ
-//#define SE_OSTR A(SE_ODIA) // Ø
-//#define SE_AE   A(SE_ADIA) // Æ
-//#define SE_TM   A(SE_QUOT) // ™
-//#define SE_LTEQ A(SE_LABK) // ≤
-//#define SE_DIV  A(SE_Z)    // ÷
-//#define SE_CCED A(SE_C)    // Ç
-//#define SE_LSAQ A(SE_V)    // ‹
-//#define SE_RSAQ A(SE_B)    // ›
-//#define SE_LSQU A(SE_N)    // ‘
-//#define SE_RSQU A(SE_M)    // ’
-//#define SE_SLQU A(SE_COMM) // ‚
-//#define SE_ELLP A(SE_DOT)  // …
-//#define SE_NDSH A(SE_MINS) // –
+// #define S_DEG LS(SE_SECT)  // °
+#define S_EXCL LS(N1) // !
+#define S_DQT LS(N2)  // "
+#define S_HASH LS(N3) // #
+// #define S_EURO LS(N4)    // €
+#define S_PERCENT LS(N5)   // %
+#define S_AMPS LS(N6)      // &
+#define S_SLASH LS(N7)     // /
+#define S_LPAR LS(N8)      // (
+#define S_RPAR LS(N9)      // )
+#define S_EQUAL LS(N0)     // =
+#define S_QMARK LS(S_PLUS) // ?
+#define S_GRAVE LS(S_ACUT) // `
+#define S_CARET LS(S_DIAE) // ^ (dead)
+// #define S_ASTR LS(SE_QUOT) // *
+#define S_GT LS(S_LT)    // >
+#define S_SEMI LS(COMMA) // ;
+#define S_COLON LS(DOT)  // :
+// #define S_UNDS LS(SE_MINS) // _
+// #define S_PILC LA(SE_SECT) // ¶
+// #define S_COPY LA(N1)    // ©
+#define S_AT LA(N2) // @
+// #define S_PND  LA(N3)    // £
+#define S_DLLR LA(N4) // $
+// #define S_INFN LA(N5)    // ∞
+#define S_PIPE LA(N7) // |
+#define S_LBKT LA(N8) // [
+#define S_RBKT LA(N9) // ]
+// #define S_AEQL LA(N0)    // ≈
+// #define S_PLMN LA(SE_PLUS) // ±
+// #define S_BULT LA(SE_Q)    // •
+// #define S_OMEG LA(SE_W)    // Ω
+// #define S_EACU LA(SE_E)    // É
+// #define S_REGD LA(SE_R)    // ®
+// #define S_DAGG LA(SE_T)    // †
+// #define S_MICR LA(SE_Y)    // µ
+// #define S_UDIA LA(SE_U)    // Ü
+// #define S_DLSI LA(SE_I)    // ı
+// #define S_OE   LA(SE_O)    // Œ
+// #define S_PI   LA(SE_P)    // π
+// #define S_DOTA LA(SE_ARNG) // ˙
+#define S_TILDE LA(S_DIAE) // ~ (dead)
+// #define S_APPL LA(SE_A)    //  (Apple logo)
+// #define S_SS   LA(SE_S)    // ß
+// #define S_PDIF LA(SE_D)    // ∂
+// #define S_FHK  LA(SE_F)    // ƒ
+// #define S_CEDL LA(SE_G)    // ¸
+// #define S_OGON LA(SE_H)    // ˛
+// #define S_SQRT LA(SE_J)    // √
+// #define S_FORD LA(SE_K)    // ª
+// #define S_FI   LA(SE_L)    // ﬁ
+// #define S_OSTR LA(SE_ODIA) // Ø
+// #define S_AE   LA(SE_ADIA) // Æ
+// #define S_TM   LA(SE_QUOT) // ™
+// #define S_LTEQ LA(SE_LABK) // ≤
+// #define S_DIV  LA(SE_Z)    // ÷
+// #define S_CCED LA(SE_C)    // Ç
+// #define S_LSAQ LA(SE_V)    // ‹
+// #define S_RSAQ LA(SE_B)    // ›
+// #define S_LSQU LA(SE_N)    // ‘
+// #define S_RSQU LA(SE_M)    // ’
+// #define S_SLQU LA(SE_COMM) // ‚
+// #define S_ELLP LA(SE_DOT)  // …
+// #define S_NDSH LA(SE_MINS) // –
 //
-//#define SE_IEXL S(A(SE_1))    // ¡
-//#define SE_YEN  S(A(SE_3))    // ¥
-//#define SE_CENT S(A(SE_4))    // ¢
-//#define SE_PERM S(A(SE_5))    // ‰
-//#define SE_BSLS S(A(SE_7))    // (backslash)
-//#define SE_LCBR S(A(SE_8))    // {
-//#define SE_RCBR S(A(SE_9))    // }
-//#define SE_NEQL S(A(SE_0))    // ≠
-//#define SE_IQUE S(A(SE_PLUS)) // ¿
-//#define SE_DACU S(A(SE_W))    // ˝
-//#define SE_DDAG S(A(SE_T))    // ‡
-//#define SE_STIL S(A(SE_Y))    // ˜
-//#define SE_DCIR S(A(SE_I))    // ˆ
-//#define SE_NARP S(A(SE_P))    // ∏
-//#define SE_RNGA S(A(SE_ARNG)) // ˚
-//#define SE_LOZN S(A(SE_A))    // ◊
-//#define SE_NARS S(A(SE_S))    // ∑
-//#define SE_INCR S(A(SE_D))    // ∆
-//#define SE_INTG S(A(SE_F))    // ∫
-//#define SE_MACR S(A(SE_G))    // ¯
-//#define SE_BREV S(A(SE_H))    // ˘
-//#define SE_NOT  S(A(SE_J))    // ¬
-//#define SE_MORD S(A(SE_K))    // º
-//#define SE_FL   S(A(SE_L))    // ﬂ
+// #define S_IEXL LS(LA(N1))    // ¡
+// #define S_YEN  LS(LA(N3))    // ¥
+// #define S_CENT LS(LA(N4))    // ¢
+// #define S_PERM LS(LA(N5))    // ‰
+#define S_BACKSLASH LS(LA(N7)) // (backslash)
+#define S_LBRC LS(LA(N8))      // {
+#define S_RBRC LS(LA(N9))      // }
+// #define S_NEQL LS(LA(N0))    // ≠
+// #define S_IQUE LS(LA(SE_PLUS)) // ¿
+// #define S_DACU LS(LA(SE_W))    // ˝
+// #define S_DDAG LS(LA(SE_T))    // ‡
+// #define S_STIL LS(LA(SE_Y))    // ˜
+// #define S_DCIR LS(LA(SE_I))    // ˆ
+// #define S_NARP LS(LA(SE_P))    // ∏
+// #define S_RNGA LS(LA(SE_ARNG)) // ˚
+// #define S_LOZN LS(LA(SE_A))    // ◊
+// #define S_NARS LS(LA(SE_S))    // ∑
+// #define S_INCR LS(LA(SE_D))    // ∆
+// #define S_INTG LS(LA(SE_F))    // ∫
+// #define S_MACR LS(LA(SE_G))    // ¯
+// #define S_BREV LS(LA(SE_H))    // ˘
+// #define S_NOT  LS(LA(SE_J))    // ¬
+// #define S_MORD LS(LA(SE_K))    // º
+// #define S_FL   LS(LA(SE_L))    // ﬂ
 //// Row 4
-//#define SE_GTEQ S(A(SE_LABK)) // ≥
-//#define SE_FRSL S(A(SE_Z))    // ⁄
-//#define SE_CARN S(A(SE_X))    // ˇ
-//#define SE_LDAQ S(A(SE_V))    // «
-//#define SE_RDAQ S(A(SE_B))    // »
-//#define SE_LDQU S(A(SE_N))    // “
-//#define SE_RDQU S(A(SE_M))    // ”
-//#define SE_DLQU S(A(SE_COMM)) // „
-//#define SE_MDDT S(A(SE_DOT))  // ·
-//#define SE_MDSH S(A(SE_MINS)) // —
+// #define S_GTEQ LS(LA(SE_LABK)) // ≥
+// #define S_CARN LS(LA(SE_X))    // ˇ
+// #define S_LDAQ LS(LA(SE_V))    // «
+// #define S_RDAQ LS(LA(SE_B))    // »
+// #define S_LDQU LS(LA(SE_N))    // “
+// #define S_RDQU LS(LA(SE_M))    // ”
+// #define S_DLQU LS(LA(SE_COMM)) // „
+// #define S_MDDT LS(LA(SE_DOT))  // ·
+// #define S_MDSH LS(LA(SE_MINS)) // —
