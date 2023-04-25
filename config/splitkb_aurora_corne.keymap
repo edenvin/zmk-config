@@ -20,6 +20,11 @@
 #define SYMR 6
 #define LAYERHOP 7
 
+&sk {
+        release-after-ms = <2000>;
+        quick-release;
+};
+
 / {
         behaviors {
                 hm: homerow_mods {
@@ -52,9 +57,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-&lt NUM S_GRAVE  &kp S_ARNG  &kp S_ADIA   &kp S_ODIA     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp COMMA
-&lt NAV ESC &hm LGUI A  &hm LALT O  &hm LCTRL E &hm LSHFT U &kp I       &kp D   &hm LSHFT H &hm LCTRL T &hm LALT N  &hm LGUI S  &kp S_MINUS
-&kp LSHIFT  &kp DOT   &kp Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &kp V  &kp Z       &hm LSHIFT S_QUOT
+&kp S_GRAVE  &kp S_ARNG  &kp S_ADIA   &kp S_ODIA     &kp P       &kp Y       &kp F   &kp G       &kp C       &kp R       &kp L       &kp COMMA
+&lt NAV ESC     &kp A   &kp O   &kp E   &kp U &kp I       &kp D     &kp H   &kp T   &kp N   &kp S  &kp S_MINUS
+&kp LSHIFT  &kp DOT   &kp Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &kp V  &kp Z       &kp LSHIFT
 
                              &kp C_PLAY_PAUSE   &mo SYMR   &lt NUM RET   &lt NAV BSPC   &lt SYML SPC  &lt MEDIA TAB
                         >;
@@ -66,7 +71,7 @@
                 nav_layer {
                         bindings = <
 &to 0  &mo LAYERHOP      &trans      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans  &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &kp RALT    &trans      &trans      &tog NAV    &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                 &trans      &trans      &trans              &kp DEL         &kp SPC    &kp RET
@@ -77,7 +82,7 @@
                 media_layer {
                         bindings = <
 &to 0      &trans          &trans          &trans          &trans              &trans                  &trans  &trans      &trans      &trans      &trans      &trans
-&trans      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT          &ext_power EP_TOG       &trans  &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI    &trans
+&trans      &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT          &ext_power EP_TOG       &trans  &sk LSHFT   &sk LCTRL   &sk LALT    &sk LGUI    &trans
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &out OUT_TOG            &trans  &tog MEDIA  &trans      &kp RALT    &trans      &trans
 
                                             &kp C_MUTE      &kp C_PLAY_PAUSE    &kp C_STOP              &trans  &trans      &trans
@@ -89,7 +94,7 @@
                 numbers_layer {
                         bindings = <
 &to 0  &trans      &trans       &trans     &trans      &trans              &kp S_EQUAL          &kp NUM_7         &kp NUM_8         &kp NUM_9         &kp S_BACKSLASH    &trans
-&trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp S_ASTRK        &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp S_SLASH &trans
+&trans  &sk LGUI    &sk LALT     &sk LCTRL  &sk LSHFT   &trans              &kp S_ASTRK        &kp NUM_4         &kp NUM_5         &kp NUM_6         &kp S_SLASH &trans
 &trans  &trans      &kp RALT     &trans     &tog NUM    &trans              &kp S_MINUS        &kp NUM_1         &kp NUM_2         &kp NUM_3         &kp GRAVE   &trans
 
                                  &trans     &trans      &trans              &kp S_PLUS          &kp NUM_0         &kp COMMA
@@ -99,7 +104,7 @@
                 functions_layer {
                         bindings = <
 &to 0  &trans      &trans      &trans      &trans      &trans              &kp PSCRN         &kp F7            &kp F8            &kp F9            &kp F12     &trans
-&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &kp SLCK          &kp F4            &kp F5            &kp F6            &kp F11     &trans
+&trans  &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &trans              &kp SLCK          &kp F4            &kp F5            &kp F6            &kp F11     &trans
 &trans  &trans      &kp RALT    &trans      &tog FUN    &trans              &kp PAUSE_BREAK   &kp F1            &kp F2            &kp F3            &kp F10     &trans
 
                                 &trans      &trans      &trans              &kp BSPC           &kp SPC           &kp K_APP
@@ -109,7 +114,7 @@
                 symbols_l_layer {
                         bindings = <
 &to 0  &kp S_LBRC    &kp S_RBRC    &kp S_LBKT    &kp S_RBKT   &kp S_DLLR           &trans      &trans      &trans      &trans          &trans    &trans
-&trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE           &trans      &kp LSHFT   &kp LCTRL   &kp LALT        &kp LGUI  &trans
+&trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE           &trans      &sk LSHFT   &sk LCTRL   &sk LALT        &sk LGUI  &trans
 &trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &trans      &tog SYML    &trans      &kp RALT        &trans    &trans
 
                                 &trans      &kp COLON   &kp SEMI                    &trans      &trans      &trans
@@ -123,7 +128,7 @@
                 symbols_r_layer {
                         bindings = <
 &to 0  &trans      &trans       &trans     &trans      &trans              &kp S_DQT      &kp S_QMARK      &kp S_AMPS      &kp S_LT        &kp S_GT     &kp S_EQUAL
-&trans  &kp LGUI    &kp LALT     &kp LCTRL  &kp LSHFT   &trans              &kp S_HASH     &kp S_CARET      &kp S_HASH      &kp S_DQT       &kp S_TILDE  &kp S_GRAVE
+&trans  &sk LGUI    &sk LALT     &sk LCTRL  &sk LSHFT   &trans              &kp S_HASH     &kp S_CARET      &kp S_HASH      &kp S_DQT       &kp S_TILDE  &kp S_GRAVE
 &trans  &trans      &kp RALT     &trans     &tog SYMR   &trans              &kp S_PERCENT  &tog SYMR         &trans          &kp RALT        &trans       &trans
 
                                 &trans      &trans      &trans              &trans      &trans      &trans
@@ -136,7 +141,7 @@
                 layer_hop_layer {
                         bindings = <
 &to 0  &trans      &trans      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans  &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &kp RALT    &trans      &trans      &trans    &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                 &trans      &to SYMR      &to NUM              &to NAV         &to SYML    &to MEDIA
