@@ -26,10 +26,10 @@
 #define S_QMARK LS(S_PLUS) // ?
 #define S_GRAVE LS(S_ACUT) // `
 #define S_CARET LS(S_DIAE) // ^ (dead)
-// #define S_ASTR LS(SE_QUOT) // *
-#define S_GT LS(S_LT)    // >
-#define S_SEMI LS(COMMA) // ;
-#define S_COLON LS(DOT)  // :
+#define S_ASTRK LS(S_QUOT) // *
+#define S_GT LS(S_LT)      // >
+#define S_SEMI LS(COMMA)   // ;
+#define S_COLON LS(DOT)    // :
 // #define S_UNDS LS(SE_MINS) // _
 // #define S_PILC LA(SE_SECT) // ¶
 // #define S_COPY LA(N1)    // ©
