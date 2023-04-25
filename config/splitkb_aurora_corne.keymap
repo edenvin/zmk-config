@@ -117,7 +117,7 @@
 &trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE           &trans      &sk LSHFT   &sk LCTRL   &sk LALT        &sk LGUI  &trans
 &trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &trans      &tog SYML    &trans      &kp RALT        &trans    &trans
 
-                                &trans      &kp COLON   &kp SEMI                    &trans      &trans      &trans
+                                &trans      &kp S_COLON   &kp S_SEMI                    &trans      &trans      &trans
 
                         >;
 
