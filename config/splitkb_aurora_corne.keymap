@@ -60,7 +60,7 @@
 &lt NAV ESC     &kp A   &kp O   &kp E   &kp U &kp I       &kp D     &kp H   &kp T   &kp N   &kp S  &kp S_MINUS
 &kp LCTRL  &kp DOT   &kp Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &kp V  &kp Z       &kp RSHIFT
 
-                             &kp LALT   &kp LGUI   &lt NUM RET   &lt SYM BSPC   &kp SPC  &lt MEDIA TAB
+                             &lt NUM RET   &kp LALT   &kp LGUI       &hm LGUI BSPC   &lt SYM SPC  &lt MEDIA TAB
                         >;
                 };
 
