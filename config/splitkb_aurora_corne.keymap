@@ -113,7 +113,7 @@
                                 &trans       &trans      &trans                     &trans      &trans      &trans
 
                         >;
-                };;
+                };
 
                 layer_hop_layer {
                         bindings = <
