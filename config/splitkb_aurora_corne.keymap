@@ -16,9 +16,8 @@
 #define MEDIA 2
 #define NUM 3
 #define FUN 4
-#define SYML 5
-#define SYMR 6
-#define LAYERHOP 7
+#define SYM 5
+#define LAYERHOP 6
 
 &sk {
         release-after-ms = <2000>;
@@ -61,7 +60,7 @@
 &lt NAV ESC     &kp A   &kp O   &kp E   &kp U &kp I       &kp D     &kp H   &kp T   &kp N   &kp S  &kp S_MINUS
 &kp LCTRL  &kp DOT   &kp Q  &kp J       &kp K       &kp X       &kp B   &kp M       &kp W       &kp V  &kp Z       &kp RSHIFT
 
-                             &kp LALT   &kp LGUI   &lt NUM RET   &lt SYML BSPC   &kp SPC  &lt MEDIA TAB
+                             &kp LALT   &kp LGUI   &lt NUM RET   &lt SYM BSPC   &kp SPC  &lt MEDIA TAB
                         >;
                 };
 
@@ -104,36 +103,25 @@
                                 &trans      &trans      &trans              &trans           &trans             &kp K_APP
                         >;
                 };
-
-                symbols_l_layer {
-                        bindings = <
-&to 0  &kp S_LBRC    &kp S_RBRC    &kp S_LBKT    &kp S_RBKT   &kp S_DLLR            &trans      &trans      &trans      &trans          &trans    &trans
-&trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE           &trans      &trans   &trans   &trans        &trans  &trans
-&trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &trans      &tog SYML    &trans      &kp RALT        &trans    &trans
 
-                                &trans      &kp S_COLON   &kp S_SEMI                    &trans      &trans      &trans
+                symbols_layer {
+                        bindings = <
+&to 0  &kp S_LBRC    &kp S_RBRC    &kp S_LBKT    &kp S_RBKT   &kp S_DLLR            &kp S_DQT      &kp S_QMARK      &kp S_AMPS      &kp S_LT        &kp S_GT     &kp S_EQUAL
+&trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE            &kp S_HASH     &kp S_CARET      &kp S_HASH      &kp S_DQT       &kp S_TILDE  &kp S_GRAVE
+&trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &kp S_PERCENT  &tog SYM         &trans          &kp RALT        &trans       &trans
+
+                                &trans       &trans      &trans                     &trans      &trans      &trans
 
                         >;
-                };
-
-                symbols_r_layer {
-                        bindings = <
-&to 0  &trans      &trans       &trans     &trans      &trans              &kp S_DQT      &kp S_QMARK      &kp S_AMPS      &kp S_LT        &kp S_GT     &kp S_EQUAL
-&trans  &trans    &trans     &trans  &trans   &trans                       &kp S_HASH     &kp S_CARET      &kp S_HASH      &kp S_DQT       &kp S_TILDE  &kp S_GRAVE
-&trans  &trans      &kp RALT     &trans     &tog SYMR   &trans              &kp S_PERCENT  &tog SYMR         &trans          &kp RALT        &trans       &trans
-
-                                &trans      &trans      &trans              &trans      &trans      &trans
-
-                        >;
-                };
+                };;
 
                 layer_hop_layer {
                         bindings = <
-&to 0  &trans      &trans      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to FUN  &trans      &to NAV      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 &trans  &trans    &trans    &trans   &trans   &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &kp RALT    &trans      &trans      &trans    &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                &trans      &to SYMR      &to NUM              &to NAV         &to SYML    &to MEDIA
+                                &trans      &trans      &to NUM              &to SYM         &trans    &to MEDIA
                         >;
                 };
 
