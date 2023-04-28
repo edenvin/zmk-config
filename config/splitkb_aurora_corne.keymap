@@ -108,7 +108,7 @@
                         bindings = <
 &to 0   &kp S_LBRC    &kp S_RBRC    &kp S_LBKT    &kp S_RBKT   &kp S_DLLR           &kp S_DQT       &kp S_QMARK     &kp S_AMPS      &kp S_LT        &kp S_GT     &kp S_EQUAL
 &trans  &kp S_SEMI    &kp S_SLASH   &kp S_LPAR    &kp S_RPAR   &kp S_PIPE           &kp S_HASH      &kp S_CARET     &kp S_HASH      &kp S_DQT       &kp S_TILDE  &kp S_GRAVE
-&trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &kp S_PERCENT   &trans          &trans          &trans          &trans       &trans
+&trans  &kp S_COLON   &trans        &kp S_AT      &kp S_EXCL   &kp S_BACKSLASH      &kp S_PERCENT   &kp S_QUOT          &trans          &trans          &trans       &trans
 
                                     &trans        &trans       &trans               &trans          &trans          &trans
 
