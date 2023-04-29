@@ -56,11 +56,11 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-&kp S_GRAVE     &kp S_ARNG  &kp S_ADIA  &kp S_ODIA  &kp P   &kp Y           &kp F   &kp G   &kp C   &kp R   &kp L   &kp COMMA
+&lt NUM S_GRAVE &kp S_ARNG  &kp S_ADIA  &kp S_ODIA  &kp P   &kp Y           &kp F   &kp G   &kp C   &kp R   &kp L   &kp COMMA
 &lt NAV ESC     &kp A       &kp O       &kp E       &kp U   &kp I           &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
-&kp LCTRL       &kp DOT     &kp Q       &kp J       &kp K   &kp X           &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&kp LSHIFT      &kp DOT     &kp Q       &kp J       &kp K   &kp X           &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
-                                    &lt NUM RET   &kp LALT  &kp LGUI        &hm LGUI BSPC   &lt SYM SPC   &lt MEDIA TAB
+                                    &hm LCTRL RET   &kp LALT  &kp LGUI      &hm LGUI BSPC   &lt SYM SPC   &lt MEDIA TAB
                         >;
                 };
 
@@ -117,9 +117,9 @@
 
                 layer_hop_layer {
                         bindings = <
-&to FUN     &trans      &to NAV     &trans  &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to NUM     &trans      &to NAV     &trans  &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 &trans      &trans      &trans      &trans  &trans      &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &trans      &trans      &trans  &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to FUN     &trans      &trans      &trans  &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                     &trans  &trans      &to NUM             &to SYM         &trans      &to MEDIA
                         >;
