@@ -64,10 +64,10 @@
                         label = "NAV";
                         bindings = <
 &to 0       &mo LAYERHOP    &trans      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans      &trans          &trans      &trans      &trans      &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans      &trans          &trans      &trans      &kp DEL     &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans      &trans          &trans      &trans      &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                        &trans      &trans      &trans              &kp DEL         &trans      &trans
+                                        &trans      &trans      &trans              &kp BSPC         &trans      &trans
                         >;
                 };
 
