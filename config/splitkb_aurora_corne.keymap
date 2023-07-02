@@ -39,9 +39,8 @@
 
         combos {
                 compatible = "zmk,combos";
-                combo_fun_layer { timeout-ms = <50>; key-positions = <0 12>; bindings = <&mo FUN>; };
-                combo_media_layer { timeout-ms = <50>; key-positions = <40 41>; bindings = <&mo MEDIA>; };
-                combo_GUI_layer { timeout-ms = <50>; key-positions = <39 40>; bindings = <&kp RGUI>; };
+                combo_fun_layer { timeout-ms = <50>; key-positions = <37 38>; bindings = <&mo FUN>; };
+                combo_media_layer { timeout-ms = <50>; key-positions = <0 1>; bindings = <&mo MEDIA>; };
                 combo_esc { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp ESC>; };
                 combo_1 { timeout-ms = <50>; key-positions = <1 13>; bindings = <&kp N1>; };
                 combo_2 { timeout-ms = <50>; key-positions = <2 14>; bindings = <&kp N2>; };
@@ -61,11 +60,11 @@
                 default_layer {
                         label = "_";
                         bindings = <
-&lt NUM TAB  &kp S_ARNG  &kp S_ADIA  &kp S_ODIA  &kp P   &kp Y           &kp F   &kp G   &kp C   &kp R   &kp L   &kp COMMA
-&lt NAV ESC  &kp A       &kp O       &kp E       &kp U   &kp I           &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
-&kp LSHIFT   &kp DOT     &kp Q       &kp J       &kp K   &kp X           &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&lt LCTRL TAB  &kp S_ARNG  &kp S_ADIA  &kp S_ODIA  &kp P   &kp Y           &kp F   &kp G   &kp C   &kp R   &kp L   &kp COMMA
+&mo NAV        &kp A       &kp O       &kp E       &kp U   &kp I           &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
+&kp LSHIFT     &kp DOT     &kp Q       &kp J       &kp K   &kp X           &kp B   &kp M   &kp W   &kp V   &kp Z   &kp LGUI
 
-                                    &hm LCTRL RET   &kp LALT  &kp LGUI      &kp BSPC   &kp SPACE   &mo SYM
+                                    &hm LALT RET   &mo SYM  &lt NUM ESC  &kp BSPC   &kp SPACE   &kp RSHIFT
                         >;
                 };
 
@@ -76,7 +75,7 @@
 &trans      &trans          &trans      &trans      &kp DEL     &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans      &trans          &trans      &trans      &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                        &trans      &trans      &trans              &kp BSPC         &trans      &trans
+                                        &trans      &trans      &trans              &trans          &trans      &trans
                         >;
                 };
 
@@ -109,7 +108,7 @@
 &trans  &trans  &trans      &trans  &trans      &trans              &kp SLCK            &kp F4  &kp F5      &kp F6      &kp F11     &trans
 &trans  &trans  &trans      &trans  &trans      &trans              &kp PAUSE_BREAK     &kp F1  &kp F2      &kp F3      &kp F10     &trans
 
-                            &trans  &trans      &trans              &trans              &trans  &kp K_APP
+                            &trans  &trans      &trans              &trans              &trans  &trans
                         >;
                 };
 
@@ -128,11 +127,11 @@
                 layer_hop_layer {
                         label = "LAYHOP";
                         bindings = <
-&to NUM     &trans      &to NAV     &trans  &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to MEDIA   &trans      &to NAV     &trans  &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 &trans      &trans      &trans      &trans  &trans      &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &to FUN     &trans      &trans      &trans  &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                    &trans  &trans      &to NUM             &to SYM         &trans      &to MEDIA
+                                    &trans  &to SYM     &to NUM             &trans          &trans      &trans
                         >;
                 };
         };
