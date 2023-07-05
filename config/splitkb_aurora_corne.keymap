@@ -60,19 +60,19 @@
                 default_layer {
                         label = "_";
                         bindings = <
-&kp S_GRAVE      &kp S_QUOT  &kp COMMA   &kp DOT     &kp P   &kp Y         &kp F   &kp G   &kp C   &kp R   &kp L   &kp S_PLUS
-&hm LSHIFT ESC   &kp A       &kp O       &kp E       &kp U   &kp I         &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
-&kp LCTRL        &kp S_DQT   &kp Q       &kp J       &kp K   &kp X         &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&kp TAB          &kp S_QUOT  &kp COMMA   &kp DOT     &kp P   &kp Y         &kp F   &kp G   &kp C   &kp R   &kp L   &kp BSPC
+&hm LSHIFT ESC   &kp A       &kp O       &kp E       &kp U   &kp I         &kp D   &kp H   &kp T   &kp N   &kp S   &kp RET
+&kp LCTRL        &kp S_MINUS &kp Q       &kp J       &kp K   &kp X         &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
-                                &hm LALT RET  &mo SYM  &kp LGUI            &kp RGUI  &kp SPACE  &lt NAV BSPC
+                                         &kp LALT   &mo SYM  &kp LGUI      &kp RGUI  &kp SPACE  &mo NAV
                         >;
                 };
 
                 nav_layer {
                         label = "NAV";
                         bindings = <
-&to 0     &mo LAYERHOP    &trans      &trans      &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans    &trans          &trans      &kp TAB     &kp DEL     &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&to 0     &mo LAYERHOP    &trans      &kp S_CARET &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans    &trans          &trans      &kp S_GRAVE &kp DEL     &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans    &trans          &trans      &trans      &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                       &trans      &trans      &trans              &trans          &trans      &trans
@@ -115,11 +115,11 @@
                 symbols_layer {
                         label = "%^&@-'/[]";
                         bindings = <
-&to 0               &kp S_HASH   &kp S_AT      &kp S_LBRC    &kp S_RBRC   &kp S_PERCENT        &kp S_CARET   &kp N7   &kp N8   &kp N9  &kp S_SLASH  &trans
-&hm LSHIFT S_EQUAL  &kp S_ADIA   &kp S_ODIA    &kp S_LBKT    &kp S_RBKT   &kp S_LT             &kp S_GT      &kp N4   &kp N5   &kp N6  &kp S_ASTRK  &trans
-&trans              &kp S_ARNG   &kp S_PIPE    &kp S_LPAR    &kp S_RPAR   &kp S_EXCL           &kp S_AMPS    &kp N1   &kp N2   &kp N3  &kp S_DLLR   &trans
+&to 0               &kp S_HASH   &kp S_AT      &kp S_LBRC    &kp S_RBRC   &kp S_PERCENT        &kp S_DLLR    &kp N7   &kp N8   &kp N9  &kp S_ASTRK  &trans
+&hm LSHIFT S_EQUAL  &kp S_ADIA   &kp S_ODIA    &kp S_LPAR    &kp S_RPAR   &kp S_LT             &kp S_GT      &kp N4   &kp N5   &kp N6  &kp S_SLASH  &trans
+&trans              &kp S_ARNG   &kp S_PIPE    &kp S_LBKT    &kp S_RBKT   &kp S_EXCL           &kp S_AMPS    &kp N1   &kp N2   &kp N3  &kp S_DQT    &trans
 
-                                               &trans        &trans       &trans               &trans        &trans   &kp N0
+                                               &trans        &trans       &trans               &kp S_PLUS      &trans   &kp N0
 
                         >;
                 };
