@@ -72,6 +72,64 @@
             bindings = <&kp S_QUOT>, <&kp S_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        n2: n2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N2";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp S_AT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        n4: n4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N4";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp S_DLLR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+       n6: n6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N6";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp S_CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+       n7: n7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N7";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp S_AMPS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+       n8: n8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N8";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp S_ASTRK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+       n9: n9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N9";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp S_LPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+       n0: n0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N0";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp S_RPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+
     };
 
     keymap {
@@ -79,12 +137,12 @@
 
         default_layer {
             bindings = <
-&gravetilde      &kp N1      &kp N2      &kp N3      &kp N4  &kp N5             &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &eqplus
+&gravetilde      &kp N1      &n2         &kp N3      &n4     &kp N5             &n6     &n7     &n8     &n9     &n0     &eqplus
 &kp TAB          &quotes     &commalt    &dotgt      &kp P   &kp Y              &kp F   &kp G   &kp C   &kp R   &kp L   &slashqmark
-&kp ESC          &kp A       &kp O       &kp E       &kp U   &kp I              &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
+&mo NAV          &kp A       &kp O       &kp E       &kp U   &kp I              &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
 &kp LSHIFT       &semicolon  &kp Q       &kp J       &kp K   &kp X &kp A  &kp A &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
-                 &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET    &kp BSPC &kp SPACE &mo NAV &kp TAB &kp RGUI
+                 &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET    &kp ESC &kp SPACE &kp BSPC &kp TAB &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
