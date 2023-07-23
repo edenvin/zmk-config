@@ -26,32 +26,117 @@
 
 / {
         behaviors {
-                hm: homerow_mods {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "HOMEROW_MODS";
-                        #binding-cells = <2>;
-                        tapping-term-ms = <200>;
-                        quick-tap-ms = <0>;
-                        flavor = "tap-preferred";
-                        bindings = <&kp>, <&kp>;
+                commalt: comma_lt {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COMMA_LT";
+                        #binding-cells = <0>;
+                        bindings = <&kp COMMA>, <&kp S_LT>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
-            };
 
-        combos {
-                compatible = "zmk,combos";
-                combo_fun_layer { timeout-ms = <50>; key-positions = <0 37>; bindings = <&mo FUN>; };
-                combo_media_layer { timeout-ms = <50>; key-positions = <0 41>; bindings = <&mo MEDIA>; };
-                combo_esc { timeout-ms = <50>; key-positions = <16 17>; bindings = <&kp ESC>; };
-                combo_1 { timeout-ms = <50>; key-positions = <1 13>; bindings = <&kp N1>; };
-                combo_2 { timeout-ms = <50>; key-positions = <2 14>; bindings = <&kp N2>; };
-                combo_3 { timeout-ms = <50>; key-positions = <3 15>; bindings = <&kp N3>; };
-                combo_4 { timeout-ms = <50>; key-positions = <4 16>; bindings = <&kp N4>; };
-                combo_5 { timeout-ms = <50>; key-positions = <5 17>; bindings = <&kp N5>; };
-                combo_6 { timeout-ms = <50>; key-positions = <6 18>; bindings = <&kp N6>; };
-                combo_7 { timeout-ms = <50>; key-positions = <7 19>; bindings = <&kp N7>; };
-                combo_8 { timeout-ms = <50>; key-positions = <8 20>; bindings = <&kp N8>; };
-                combo_9 { timeout-ms = <50>; key-positions = <9 21>; bindings = <&kp N9>; };
-                combo_0 { timeout-ms = <50>; key-positions = <10 22>; bindings = <&kp N0>; };
+                dotgt: dot_gt {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "DOT_GT";
+                        #binding-cells = <0>;
+                        bindings = <&kp DOT>, <&kp S_GT>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                eqplus: equal_plus {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "EQUAL_PLUS";
+                        #binding-cells = <0>;
+                        bindings = <&kp S_EQUAL>, <&kp S_PLUS>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                slashqmark: slash_qmark {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "SLASH_QUESTIONMARK";
+                        #binding-cells = <0>;
+                        bindings = <&kp S_SLASH>, <&kp S_QMARK>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                gravetilde: grave_tilde {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "GRAVE_TILDE";
+                        #binding-cells = <0>;
+                        bindings = <&kp S_GRAVE>, <&kp S_TILDE>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                semicolon: semi_colon {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "SEMI_COLON";
+                        #binding-cells = <0>;
+                        bindings = <&kp S_SEMI>, <&kp S_COLON>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                quotes: sqt_dqt {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "SINGLEQUOTE_DOUBLEQUOTE";
+                        #binding-cells = <0>;
+                        bindings = <&kp S_QUOT>, <&kp S_DQT>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n2: n2 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N2";
+                        #binding-cells = <0>;
+                        bindings = <&kp N2>, <&kp S_AT>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                
+                n4: n4 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N4";
+                        #binding-cells = <0>;
+                        bindings = <&kp N4>, <&kp S_DLLR>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n6: n6 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N6";
+                        #binding-cells = <0>;
+                        bindings = <&kp N6>, <&kp S_CARET>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n7: n7 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N7";
+                        #binding-cells = <0>;
+                        bindings = <&kp N7>, <&kp S_AMPS>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n8: n8 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N8";
+                        #binding-cells = <0>;
+                        bindings = <&kp N8>, <&kp S_ASTRK>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n9: n9 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N9";
+                        #binding-cells = <0>;
+                        bindings = <&kp N9>, <&kp S_LPAR>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+                n0: n0 {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "N0";
+                        #binding-cells = <0>;
+                        bindings = <&kp N0>, <&kp S_RPAR>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
+                };
         };
 
         keymap {
@@ -60,78 +145,84 @@
                 default_layer {
                         label = "_";
                         bindings = <
-&kp TAB          &kp S_QUOT  &kp COMMA   &kp DOT     &kp P   &kp Y         &kp F   &kp G   &kp C   &kp R   &kp L   &kp BSPC
-&hm LSHIFT ESC   &kp A       &kp O       &kp E       &kp U   &kp I         &kp D   &kp H   &kp T   &kp N   &kp S   &kp RET
-&kp LCTRL        &kp S_MINUS &kp Q       &kp J       &kp K   &kp X         &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&gravetilde     &kp N1      &n2         &kp N3      &n4     &kp N5                      &n6     &n7     &n8     &n9     &n0     &eqplus
+&kp TAB         &quotes     &commalt    &dotgt      &kp P   &kp Y                       &kp F   &kp G   &kp C   &kp R   &kp L   &slashqmark
+&mo NAV         &kp A       &kp O       &kp E       &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
+&kp LSHIFT      &semicolon  &kp Q       &kp J       &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
-                                         &kp LALT   &mo SYM  &kp LGUI      &kp RGUI  &kp SPACE  &mo NAV
+                              &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp TAB &kp RGUI
                         >;
                 };
 
                 nav_layer {
                         label = "NAV";
                         bindings = <
-&to 0     &mo LAYERHOP    &trans      &kp S_CARET &kp DEL     &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans    &trans          &trans      &kp S_GRAVE &kp DEL     &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans    &trans          &trans      &trans      &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans      &trans          &trans  &trans          &trans  &trans                      &trans      &trans      &trans      &trans      &trans    &trans
+&to 0       &mo LAYERHOP    &trans  &kp S_CARET     &kp DEL &trans                      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
+&trans      &trans          &trans  &kp S_GRAVE     &kp DEL &trans                      &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
+&trans      &trans          &trans  &trans          &trans  &trans  &trans      &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
 
-                                      &trans      &trans      &trans              &trans          &trans      &trans
+                                       &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
                 };
 
                 media_layer {
                         label = "MEDIA";
                         bindings = <
-&to 0       &trans          &trans          &trans          &trans          &trans                      &trans  &kp C_MUTE          &trans          &trans          &trans      &trans
-&trans      &trans          &trans          &trans          &trans          &ext_power EP_TOG           &trans  &kp C_PREV          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &out OUT_TOG                &trans  &kp C_PLAY_PAUSE    &kp C_STOP      &trans          &trans      &trans
+&trans      &trans          &trans          &trans          &trans          &trans                          &trans  &trans              &trans          &trans          &trans      &trans
+&to 0       &trans          &trans          &trans          &trans          &trans                          &trans  &kp C_MUTE          &trans          &trans          &trans      &trans
+&trans      &trans          &trans          &trans          &trans          &ext_power EP_TOG               &trans  &kp C_PREV          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &out OUT_TOG  &trans    &trans  &trans  &kp C_PLAY_PAUSE    &kp C_STOP      &trans          &trans      &trans
 
-                                            &trans          &trans          &trans                      &trans  &trans              &trans
+                                                              &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
                         >;
                 };
 
                 numbers_layer {
                         label = "123";
                         bindings = <
-&to 0   &kp N1  &kp N2      &kp N3  &kp N4      &kp N5              &kp N6     &kp N7   &kp N8   &kp N9   &kp N0       &trans
-&trans  &trans  &trans      &trans  &trans      &trans              &trans     &kp N4   &kp N5   &kp N6   &kp S_ASTRK  &trans
-&trans  &trans  &trans      &trans  &trans      &trans              &trans     &kp N1   &kp N2   &kp N3   &kp S_EQUAL  &trans
+&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &trans   &trans   &trans   &trans       &trans
+&to 0   &kp N1  &kp N2      &kp N3  &kp N4      &kp N5                      &kp N6     &kp N7   &kp N8   &kp N9   &kp N0       &trans
+&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &kp N4   &kp N5   &kp N6   &kp S_ASTRK  &trans
+&trans  &trans  &trans      &trans  &trans      &trans  &trans    &trans    &trans     &kp N1   &kp N2   &kp N3   &kp S_EQUAL  &trans
 
-                            &trans  &trans      &trans              &trans     &kp N0   &trans
+                           &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
                 };
 
                 functions_layer {
                         label = "Fn";
                         bindings = <
-&to 0   &trans  &trans      &trans  &trans      &trans              &kp PSCRN           &kp F7  &kp F8      &kp F9      &kp F12     &trans
-&trans  &trans  &trans      &trans  &trans      &trans              &kp SLCK            &kp F4  &kp F5      &kp F6      &kp F11     &trans
-&trans  &trans  &trans      &trans  &trans      &trans              &kp PAUSE_BREAK     &kp F1  &kp F2      &kp F3      &kp F10     &trans
+&trans  &trans  &trans      &trans  &trans      &trans                      &trans              &trans  &trans      &trans      &trans      &trans
+&to 0   &trans  &trans      &trans  &trans      &trans                      &kp PSCRN           &kp F7  &kp F8      &kp F9      &kp F12     &trans
+&trans  &trans  &trans      &trans  &trans      &trans                      &kp SLCK            &kp F4  &kp F5      &kp F6      &kp F11     &trans
+&trans  &trans  &trans      &trans  &trans      &trans   &trans    &trans   &kp PAUSE_BREAK     &kp F1  &kp F2      &kp F3      &kp F10     &trans
 
-                            &trans  &trans      &trans              &trans              &trans  &trans
+                           &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
                 };
 
                 symbols_layer {
                         label = "%^&@-'/[]";
                         bindings = <
-&to 0               &kp S_HASH   &kp S_AT      &kp S_LBRC    &kp S_RBRC   &kp S_PERCENT        &kp S_DLLR    &kp N7   &kp N8   &kp N9  &kp S_ASTRK  &trans
-&hm LSHIFT S_EQUAL  &kp S_ADIA   &kp S_ODIA    &kp S_LPAR    &kp S_RPAR   &kp S_LT             &kp S_GT      &kp N4   &kp N5   &kp N6  &kp S_SLASH  &trans
-&trans              &kp S_ARNG   &kp S_PIPE    &kp S_LBKT    &kp S_RBKT   &kp S_EXCL           &kp S_AMPS    &kp N1   &kp N2   &kp N3  &kp S_DQT    &trans
+&trans      &trans      &trans      &trans      &trans      &trans                          &trans            &trans   &trans   &trans  &trans       &trans
+&to 0       &kp S_HASH  &kp S_AT    &kp S_LBRC  &kp S_RBRC  &kp S_PERCENT                   &kp S_DLLR        &kp N7   &kp N8   &kp N9  &kp S_ASTRK  &trans
+&kp S_EQUAL &kp S_ADIA  &kp S_ODIA  &kp S_LPAR  &kp S_RPAR  &kp S_LT                        &kp S_GT          &kp N4   &kp N5   &kp N6  &kp S_SLASH  &trans
+&trans      &kp S_ARNG  &kp S_PIPE  &kp S_LBKT  &kp S_RBKT  &kp S_EXCL      &trans  &trans  &kp S_AMPS        &kp N1   &kp N2   &kp N3  &kp S_DQT    &trans
 
-                                               &trans        &trans       &trans               &kp S_PLUS      &trans   &kp N0
-
+                                              &trans &trans &trans &trans &trans       &trans &trans &kp N0 &kp COMMA  &trans
                         >;
                 };
 
                 layer_hop_layer {
                         label = "LAYHOP";
                         bindings = <
-&to MEDIA   &trans      &to FUN     &trans  &trans      &trans              &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans      &trans      &trans      &trans  &trans      &trans              &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &trans      &trans      &trans  &trans      &trans              &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans      &trans      &trans      &trans  &trans      &trans                  &trans          &trans      &trans      &trans      &trans      &trans
+&to MEDIA   &trans      &to FUN     &trans  &trans      &trans                  &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to NAV     &trans      &trans      &trans  &trans      &trans                  &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans      &trans      &trans      &trans  &trans      &trans  &trans  &trans  &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                    &trans  &to SYM     &trans              &trans          &to NAV      &trans
+                                 &trans &trans &trans &to SYM &trans       &trans &trans &trans &trans &trans
                         >;
                 };
         };
