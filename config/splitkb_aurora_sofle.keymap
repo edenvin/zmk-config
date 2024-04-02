@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#include "swe.h"
+#include "eurkey.h"
 
 #define NAV 1
 #define MEDIA 2
@@ -19,147 +19,26 @@
 #define SYM 5
 #define LAYERHOP 6
 
-&sk {
-        release-after-ms = <2000>;
-        quick-release;
-};
-
 / {
-        behaviors {
-                commalt: comma_lt {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COMMA_LT";
-                        #binding-cells = <0>;
-                        bindings = <&kp COMMA>, <&kp S_LT>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                dotgt: dot_gt {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "DOT_GT";
-                        #binding-cells = <0>;
-                        bindings = <&kp DOT>, <&kp S_GT>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                eqplus: equal_plus {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "EQUAL_PLUS";
-                        #binding-cells = <0>;
-                        bindings = <&kp S_EQUAL>, <&kp S_PLUS>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                slashqmark: slash_qmark {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "SLASH_QUESTIONMARK";
-                        #binding-cells = <0>;
-                        bindings = <&kp S_SLASH>, <&kp S_QMARK>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                gravetilde: grave_tilde {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "GRAVE_TILDE";
-                        #binding-cells = <0>;
-                        bindings = <&kp S_GRAVE>, <&kp S_TILDE>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                semicolon: semi_colon {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "SEMI_COLON";
-                        #binding-cells = <0>;
-                        bindings = <&kp S_SEMI>, <&kp S_COLON>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                quotes: sqt_dqt {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "SINGLEQUOTE_DOUBLEQUOTE";
-                        #binding-cells = <0>;
-                        bindings = <&kp S_QUOT>, <&kp S_DQT>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n2: n2 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N2";
-                        #binding-cells = <0>;
-                        bindings = <&kp N2>, <&kp S_AT>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-                
-                n4: n4 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N4";
-                        #binding-cells = <0>;
-                        bindings = <&kp N4>, <&kp S_DLLR>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n6: n6 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N6";
-                        #binding-cells = <0>;
-                        bindings = <&kp N6>, <&kp S_CARET>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n7: n7 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N7";
-                        #binding-cells = <0>;
-                        bindings = <&kp N7>, <&kp S_AMPS>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n8: n8 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N8";
-                        #binding-cells = <0>;
-                        bindings = <&kp N8>, <&kp S_ASTRK>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n9: n9 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N9";
-                        #binding-cells = <0>;
-                        bindings = <&kp N9>, <&kp S_LPAR>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-
-                n0: n0 {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "N0";
-                        #binding-cells = <0>;
-                        bindings = <&kp N0>, <&kp S_RPAR>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>;
-                };
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "_";
                         bindings = <
-&gravetilde     &kp N1      &n2         &kp N3      &n4     &kp N5                      &n6     &n7     &n8     &n9     &n0     &eqplus
-&kp TAB         &quotes     &commalt    &dotgt      &kp P   &kp Y                       &kp F   &kp G   &kp C   &kp R   &kp L   &slashqmark
-&mo NAV         &kp A       &kp O       &kp E       &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp S_MINUS
-&kp LSHIFT      &semicolon  &kp Q       &kp J       &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&kp GRAVE     &kp N1      &kp N2         &kp N3      &kp N4     &kp N5                      &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp EQUAL
+&kp TAB         &kp SINGLE_QUOTE &kp COMMA   &kp DOT     &kp P   &kp Y                       &kp F   &kp G   &kp C   &kp R   &kp L   &kp SLASH
+&mo NAV         &kp A       &kp O       &kp E       &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp MINUS
+&kp LSHIFT      &kp SEMICOLON  &kp Q       &kp J       &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
                               &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp TAB &kp RGUI
                         >;
                 };
 
                 nav_layer {
-                        label = "NAV";
                         bindings = <
 &trans      &trans          &trans  &trans          &trans  &trans                      &trans      &trans      &trans      &trans      &trans    &trans
-&to 0       &mo LAYERHOP    &trans  &kp S_CARET     &kp DEL &trans                      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
-&trans      &trans          &trans  &kp S_GRAVE     &kp DEL &trans                      &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
+&to 0       &mo LAYERHOP    &trans  &kp CARET     &kp DEL &trans                      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
+&trans      &trans          &trans  &kp GRAVE     &kp DEL &trans                      &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
 &trans      &trans          &trans  &trans          &trans  &trans  &trans      &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
 
                                        &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -167,7 +46,6 @@
                 };
 
                 media_layer {
-                        label = "MEDIA";
                         bindings = <
 &trans      &trans          &trans          &trans          &trans          &trans                          &trans  &trans              &trans          &trans          &trans      &trans
 &to 0       &trans          &trans          &trans          &trans          &trans                          &trans  &kp C_MUTE          &trans          &trans          &trans      &trans
@@ -179,19 +57,17 @@
                 };
 
                 numbers_layer {
-                        label = "123";
                         bindings = <
 &trans  &trans  &trans      &trans  &trans      &trans                      &trans     &trans   &trans   &trans   &trans       &trans
 &to 0   &kp N1  &kp N2      &kp N3  &kp N4      &kp N5                      &kp N6     &kp N7   &kp N8   &kp N9   &kp N0       &trans
-&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &kp N4   &kp N5   &kp N6   &kp S_ASTRK  &trans
-&trans  &trans  &trans      &trans  &trans      &trans  &trans    &trans    &trans     &kp N1   &kp N2   &kp N3   &kp S_EQUAL  &trans
+&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &kp N4   &kp N5   &kp N6   &kp ASTRK  &trans
+&trans  &trans  &trans      &trans  &trans      &trans  &trans    &trans    &trans     &kp N1   &kp N2   &kp N3   &kp EQUAL  &trans
 
                            &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
                 };
 
                 functions_layer {
-                        label = "Fn";
                         bindings = <
 &trans  &trans  &trans      &trans  &trans      &trans                      &trans              &trans  &trans      &trans      &trans      &trans
 &to 0   &trans  &trans      &trans  &trans      &trans                      &kp PSCRN           &kp F7  &kp F8      &kp F9      &kp F12     &trans
@@ -203,19 +79,17 @@
                 };
 
                 symbols_layer {
-                        label = "%^&@-'/[]";
                         bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans                          &trans            &trans   &trans   &trans  &trans       &trans
-&to 0       &kp S_HASH  &kp S_AT    &kp S_LBRC  &kp S_RBRC  &kp S_PERCENT                   &kp S_DLLR        &kp N7   &kp N8   &kp N9  &kp S_ASTRK  &trans
-&kp S_EQUAL &kp S_ADIA  &kp S_ODIA  &kp S_LPAR  &kp S_RPAR  &kp S_LT                        &kp S_GT          &kp N4   &kp N5   &kp N6  &kp S_SLASH  &trans
-&trans      &kp S_ARNG  &kp S_PIPE  &kp S_LBKT  &kp S_RBKT  &kp S_EXCL      &trans  &trans  &kp S_AMPS        &kp N1   &kp N2   &kp N3  &kp S_DQT    &trans
+&to 0       &kp HASH  &kp AT    &kp LBRC  &kp RBRC  &kp PERCENT                   &kp DLLR        &kp N7   &kp N8   &kp N9  &kp ASTRK  &trans
+&kp EQUAL &kp EU_ADIA  &kp EU_ODIA  &kp LPAR  &kp RPAR  &kp LT                        &kp GT          &kp N4   &kp N5   &kp N6  &kp SLASH  &trans
+&trans      &kp EU_ARNG  &kp PIPE  &kp LBKT  &kp RBKT  &kp EXCL      &trans  &trans  &kp AMPS        &kp N1   &kp N2   &kp N3  &kp DQT    &trans
 
                                               &trans &trans &trans &trans &trans       &trans &trans &kp N0 &kp COMMA  &trans
                         >;
                 };
 
                 layer_hop_layer {
-                        label = "LAYHOP";
                         bindings = <
 &trans      &trans      &trans      &trans  &trans      &trans                  &trans          &trans      &trans      &trans      &trans      &trans
 &to MEDIA   &trans      &to FUN     &trans  &trans      &trans                  &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
