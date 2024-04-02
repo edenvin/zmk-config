@@ -25,10 +25,10 @@
 
                 default_layer {
                         bindings = <
-&kp GRAVE     &kp N1      &kp N2         &kp N3      &kp N4     &kp N5                      &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp EQUAL
-&kp TAB         &kp SINGLE_QUOTE &kp COMMA   &kp DOT     &kp P   &kp Y                       &kp F   &kp G   &kp C   &kp R   &kp L   &kp SLASH
-&mo NAV         &kp A       &kp O       &kp E       &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp MINUS
-&kp LSHIFT      &kp SEMICOLON  &kp Q       &kp J       &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
+&kp GRAVE   &kp N1              &kp N2      &kp N3  &kp N4  &kp N5                      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp EQUAL
+&kp TAB     &kp SINGLE_QUOTE    &kp COMMA   &kp DOT &kp P   &kp Y                       &kp F   &kp G   &kp C   &kp R   &kp L   &kp SLASH
+&mo NAV     &kp A               &kp O       &kp E   &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp MINUS
+&kp LSHIFT  &kp SEMICOLON       &kp Q       &kp J   &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
                               &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp TAB &kp RGUI
                         >;
@@ -36,10 +36,10 @@
 
                 nav_layer {
                         bindings = <
-&trans      &trans          &trans  &trans          &trans  &trans                      &trans      &trans      &trans      &trans      &trans    &trans
-&to 0       &mo LAYERHOP    &trans  &kp CARET     &kp DEL &trans                      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
-&trans      &trans          &trans  &kp GRAVE     &kp DEL &trans                      &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
-&trans      &trans          &trans  &trans          &trans  &trans  &trans      &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
+&trans  &trans          &trans  &trans      &trans  &trans                      &trans      &trans      &trans      &trans      &trans    &trans
+&to 0   &mo LAYERHOP    &trans  &kp CARET   &kp DEL &trans                      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
+&trans  &trans          &trans  &kp GRAVE   &kp DEL &trans                      &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
+&trans  &trans          &trans  &trans      &trans  &trans  &trans      &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
 
                                        &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
@@ -58,10 +58,10 @@
 
                 numbers_layer {
                         bindings = <
-&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &trans   &trans   &trans   &trans       &trans
-&to 0   &kp N1  &kp N2      &kp N3  &kp N4      &kp N5                      &kp N6     &kp N7   &kp N8   &kp N9   &kp N0       &trans
-&trans  &trans  &trans      &trans  &trans      &trans                      &trans     &kp N4   &kp N5   &kp N6   &kp ASTRK  &trans
-&trans  &trans  &trans      &trans  &trans      &trans  &trans    &trans    &trans     &kp N1   &kp N2   &kp N3   &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans      &trans
+&to 0   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans  &kp N4  &kp N5  &kp N6  &kp ASTRK   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL   &trans
 
                            &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
@@ -69,10 +69,10 @@
 
                 functions_layer {
                         bindings = <
-&trans  &trans  &trans      &trans  &trans      &trans                      &trans              &trans  &trans      &trans      &trans      &trans
-&to 0   &trans  &trans      &trans  &trans      &trans                      &kp PSCRN           &kp F7  &kp F8      &kp F9      &kp F12     &trans
-&trans  &trans  &trans      &trans  &trans      &trans                      &kp SLCK            &kp F4  &kp F5      &kp F6      &kp F11     &trans
-&trans  &trans  &trans      &trans  &trans      &trans   &trans    &trans   &kp PAUSE_BREAK     &kp F1  &kp F2      &kp F3      &kp F10     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans          &trans  &trans  &trans  &trans      &trans
+&to 0   &trans  &trans  &trans  &trans  &trans                      &kp PSCRN       &kp F7  &kp F8  &kp F9  &kp F12     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &kp SLCK        &kp F4  &kp F5  &kp F6  &kp F11     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PAUSE_BREAK &kp F1  &kp F2  &kp F3  &kp F10     &trans
 
                            &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
                         >;
@@ -80,23 +80,23 @@
 
                 symbols_layer {
                         bindings = <
-&trans      &trans      &trans      &trans      &trans      &trans                          &trans            &trans   &trans   &trans  &trans       &trans
-&to 0       &kp HASH  &kp AT    &kp LBRC  &kp RBRC  &kp PERCENT                   &kp DLLR        &kp N7   &kp N8   &kp N9  &kp ASTRK  &trans
-&kp EQUAL &kp EU_ADIA  &kp EU_ODIA  &kp LPAR  &kp RPAR  &kp LT                        &kp GT          &kp N4   &kp N5   &kp N6  &kp SLASH  &trans
-&trans      &kp EU_ARNG  &kp PIPE  &kp LBKT  &kp RBKT  &kp EXCL      &trans  &trans  &kp AMPS        &kp N1   &kp N2   &kp N3  &kp DQT    &trans
+&trans      &trans      &trans      &trans      &trans      &trans                      &trans      &trans  &trans  &trans  &trans      &trans
+&to 0       &kp HASH    &kp AT      &kp LBRC    &kp RBRC    &kp PERCENT                 &kp DLLR    &kp N7  &kp N8  &kp N9  &kp ASTRK   &trans
+&kp EQUAL   &kp EU_ADIA &kp EU_ODIA &kp LPAR    &kp RPAR    &kp LT                      &kp GT      &kp N4  &kp N5  &kp N6  &kp SLASH   &trans
+&trans      &kp EU_ARNG &kp PIPE    &kp LBKT    &kp RBKT    &kp EXCL    &trans  &trans  &kp AMPS    &kp N1  &kp N2  &kp N3  &kp DQT     &trans
 
-                                              &trans &trans &trans &trans &trans       &trans &trans &kp N0 &kp COMMA  &trans
+                                        &trans &trans &trans &trans &trans       &trans &trans &kp N0 &kp COMMA  &trans
                         >;
                 };
 
                 layer_hop_layer {
                         bindings = <
-&trans      &trans      &trans      &trans  &trans      &trans                  &trans          &trans      &trans      &trans      &trans      &trans
-&to MEDIA   &trans      &to FUN     &trans  &trans      &trans                  &trans          &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&to NAV     &trans      &trans      &trans  &trans      &trans                  &caps_word      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &trans      &trans      &trans  &trans      &trans  &trans  &trans  &kp INSERT      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans      &trans  &trans      &trans  &trans  &trans                  &trans      &trans      &trans      &trans      &trans      &trans
+&to MEDIA   &trans  &to FUN     &trans  &trans  &trans                  &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&to NAV     &trans  &trans      &trans  &trans  &trans                  &caps_word  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans      &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
-                                 &trans &trans &trans &to SYM &trans       &trans &trans &trans &trans &trans
+                        &trans &trans &trans &to SYM &trans       &trans &trans &trans &trans &trans
                         >;
                 };
         };
