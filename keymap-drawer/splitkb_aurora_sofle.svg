@@ -103,8 +103,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-default">
-<text x="0" y="28" class="label">default:</text>
+<g transform="translate(30, 0)" class="layer-base">
+<text x="0" y="28" class="label">base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -320,7 +320,7 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">symbols</text>
+<text x="0" y="0" class="key tap">sym</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -348,8 +348,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 398)" class="layer-symbols">
-<text x="0" y="28" class="label">symbols:</text>
+<g transform="translate(30, 398)" class="layer-sym">
+<text x="0" y="28" class="label">sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -550,7 +550,7 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key held keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">default</text>
+<text x="0" y="0" class="key held tap">base</text>
 <text x="0" y="24" class="key held hold">toggle</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
@@ -644,7 +644,7 @@ path.combo {
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">layerhop</tspan></text>
+<text x="0" y="0" class="key tap">layhop</text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(588, 98)" class="key trans keypos-18">
@@ -673,7 +673,7 @@ path.combo {
 </g>
 <g transform="translate(28, 175)" class="key held keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">default</text>
+<text x="0" y="0" class="key held tap">base</text>
 <text x="0" y="24" class="key held hold">toggle</text>
 </g>
 <g transform="translate(84, 175)" class="key keypos-25">
@@ -784,7 +784,7 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">default</text>
+<text x="0" y="0" class="key tap">base</text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
@@ -1008,7 +1008,7 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">default</text>
+<text x="0" y="0" class="key tap">base</text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">
@@ -1031,8 +1031,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1590)" class="layer-layerhop">
-<text x="0" y="28" class="label">layerhop:</text>
+<g transform="translate(30, 1590)" class="layer-layhop">
+<text x="0" y="28" class="label">layhop:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1199,7 +1199,7 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">symbols</text>
+<text x="0" y="0" class="key tap">sym</text>
 <text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(378, 291) rotate(30.0)" class="key trans keypos-54">

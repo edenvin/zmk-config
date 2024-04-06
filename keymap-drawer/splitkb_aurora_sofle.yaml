@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', Tab, '''', ',', ., P, Y, F, G, C, R, L, /, nav, A, O, E, U, I, D, H, T, N, S, '-', Shift,
-    ;, Q, J, K, X, A, A, B, M, W, V, Z, Shift, Ctrl, Alt, Super, symbols, ↵, Esc, SPACE, ⌫, Hyper, Super]
-  symbols:
+  base: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', Tab, '''', ',', ., P, Y, F, G, C, R, L, /, nav, A, O, E, U, I, D, H, T, N, S, '-', Shift, ;,
+    Q, J, K, X, A, A, B, M, W, V, Z, Shift, Ctrl, Alt, Super, sym, ↵, Esc, SPACE, ⌫, Hyper, Super]
+  sym:
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -56,7 +56,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: default, h: toggle, type: held}
+  - {t: base, h: toggle, type: held}
   - {type: trans}
   - {type: trans}
   - '0'
@@ -81,14 +81,14 @@ layers:
   - F12
   - {type: trans}
   - ⌦
-  - {t: layerhop, h: toggle}
+  - {t: layhop, h: toggle}
   - {type: trans}
   - {type: trans}
   - AC COPY
   - AC PASTE
   - {type: trans}
   - {type: trans}
-  - {t: default, h: toggle, type: held}
+  - {t: base, h: toggle, type: held}
   - {t: Super, h: sticky}
   - {t: Alt, h: sticky}
   - {t: Ctrl, h: sticky}
@@ -117,7 +117,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: default, h: toggle}
+  - {t: base, h: toggle}
   - {type: trans}
   - ⌦
   - {type: trans}
@@ -178,14 +178,14 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: default, h: toggle}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  layerhop:
+  layhop:
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -239,7 +239,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: symbols, h: toggle}
+  - {t: sym, h: toggle}
   - {type: trans}
   - {type: trans}
   - {type: trans}
