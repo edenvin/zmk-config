@@ -55,7 +55,7 @@ layers:
   - Alt
   - Super
   - nav
-  - {t: ↵, h: sym}
+  - {t: ↵, h: num}
   - ⌫
   - SPACE
   - {t: ⌫, h: sym}
@@ -73,56 +73,56 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - +
+  - {type: trans}
+  - {type: trans}
+  - '%'
+  - '@'
+  - (
+  - )
+  - '&'
+  - '*'
+  - '|'
+  - \
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - Ä
   - Ö
-  - (
-  - )
-  - '%'
   - '{'
-  - '7'
-  - '8'
-  - '9'
   - '}'
-  - /
-  - '='
-  - {t: Super, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
   - '?'
-  - '['
-  - '4'
-  - '5'
-  - '6'
-  - ']'
-  - '-'
+  - +
+  - Shift
+  - Ctrl
+  - Alt
+  - Super
+  - {type: trans}
   - {type: trans}
   - Å
   - '#'
-  - '@'
-  - \
+  - '['
+  - ']'
   - '!'
   - {type: trans}
   - {type: trans}
-  - '&'
-  - '1'
-  - '2'
-  - '3'
-  - '*'
+  - '='
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {t: base, h: toggle}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: held}
   - {type: trans}
-  - '0'
-  - ','
   - {type: trans}
-  - {type: trans}
-  nav:
+  num:
   - {type: trans}
   - F1
   - F2
@@ -134,25 +134,86 @@ layers:
   - F8
   - F9
   - F10
-  - {type: trans}
+  - +
   - {type: trans}
   - F11
   - F12
+  - (
+  - )
   - {type: trans}
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - {type: trans}
+  - /
+  - {t: nav, h: toggle}
+  - Super
+  - Alt
+  - Ctrl
+  - Shift
+  - {type: trans}
+  - +
+  - '4'
+  - '5'
+  - '6'
+  - {type: trans}
+  - '-'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: base, h: toggle}
+  - {type: held}
+  - {type: trans}
+  - '0'
+  - ','
+  - .
+  - {type: trans}
+  nav:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Copy
+  - Paste
   - ⌦
-  - {t: layhop, h: toggle}
   - {type: trans}
   - {type: trans}
-  - AC COPY
-  - AC PASTE
+  - {type: trans}
+  - Tab
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle, type: held}
-  - {t: Super, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
   - {type: trans}
+  - {type: held}
+  - Super
+  - Alt
+  - Ctrl
+  - Shift
+  - media
   - {type: trans}
   - ◀
   - ▼
@@ -162,12 +223,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - {t: num, h: toggle}
+  - {t: sym, h: toggle}
+  - {t: media, h: toggle}
   - {type: trans}
   - {type: trans}
-  - media
   - {type: trans}
-  - {type: trans}
-  - INSERT
   - HOME
   - PG DN
   - PG UP
@@ -209,11 +270,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {t: Super, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
-  - EP TOG
+  - Super
+  - Alt
+  - Ctrl
+  - Shift
+  - {t: EP TOG, type: held}
   - {type: trans}
   - ⏮
   - Vol ▼
@@ -225,12 +286,12 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - ⏯
-  - ◼
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -239,69 +300,8 @@ layers:
   - {type: trans}
   - {t: base, h: toggle}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  layhop:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {t: nav, h: toggle}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {t: media, h: toggle}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {t: sym, h: toggle}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - ◼
+  - ⏯
   - {type: trans}
   - {type: trans}
   - {type: trans}
