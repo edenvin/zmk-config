@@ -13,9 +13,9 @@
 #include "eurkey.h"
 
 #define SYM 1
-#define NAV 2
-#define MEDIA 3
-#define LAYERHOP 4
+#define NUM 2
+#define NAV 3
+#define MEDIA 4
 
 &sk {
     release-after-ms = <1000>;
@@ -49,27 +49,38 @@
 &lt NAV ESC     &hm LGUI A          &hm LALT O  &hm LCTRL E     &hm LSHIFT U    &kp I                   &kp D   &hm RSHIFT H    &hm RCTRL T     &hm RALT N  &hm RGUI S  &kp MINUS
 &kp LSHIFT      &kp SEMICOLON       &kp Q       &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V       &kp Z       &kp RSHIFT
 
-                              &kp LCTRL &kp LALT &kp LGUI &mo NAV &lt SYM RET       &kp BSPC &kp SPACE &lt SYM BSPC &kp LG(LA(LS(LCTRL))) &kp RGUI
+                              &kp LCTRL &kp LALT &kp LGUI &mo NAV &lt NUM RET       &kp BSPC &kp SPACE &lt SYM BSPC &kp LG(LA(LS(LCTRL))) &kp RGUI
             >;
         };
 
         symbols_layer {
             bindings = <
-&trans      &trans          &trans          &trans      &trans          &trans                      &trans      &trans  &trans  &trans  &trans      &kp PLUS
-&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LPAR    &kp RPAR        &kp PERCENT                 &kp LBRC    &kp N7  &kp N8  &kp N9  &kp RBRC    &kp SLASH
-&kp EQUAL   &sk LGUI        &sk LALT        &sk LCTRL   &sk LSHIFT      &kp QMARK                   &kp LBKT    &kp N4  &kp N5  &kp N6  &kp RBKT    &kp MINUS
-&trans      &kp EU_ARNG     &kp HASH        &kp AT      &kp BACKSLASH   &kp EXCL    &trans  &trans  &kp AMPS    &kp N1  &kp N2  &kp N3  &kp ASTRK   &trans
+&trans      &trans          &trans          &trans      &trans      &trans                      &trans      &trans      &trans          &trans      &trans      &trans
+&trans      &kp PERCENT     &kp AT          &kp LPAR    &kp RPAR    &kp AMPS                    &kp ASTRK   &kp PIPE    &kp BACKSLASH   &trans      &trans      &trans
+&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBRC    &kp RBRC    &kp QMARK                   &kp PLUS    &kp RSHIFT  &kp RCTRL       &kp RALT    &kp RGUI    &trans
+&trans      &kp EU_ARNG     &kp HASH        &kp LBKT    &kp RBKT    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
 
-                                        &trans &trans &trans &to 0 &trans       &trans &kp N0 &kp COMMA &trans  &trans
+                                        &trans &trans &trans &to 0 &trans       &trans &trans &trans &trans  &trans
+            >;
+        };
+
+        numbers_layer {
+            bindings = <
+&trans      &kp F1          &kp F2          &kp F3      &kp F4          &kp F5                      &kp F6      &kp F7  &kp F8  &kp F9  &kp F10     &kp PLUS
+&trans      &kp F11         &kp F12         &kp LPAR    &kp RPAR        &trans                      &kp ASTRK   &kp N7  &kp N8  &kp N9  &trans      &kp SLASH
+&to NAV     &kp LGUI        &kp LALT        &kp LCTRL   &kp LSHIFT      &trans                      &kp PLUS    &kp N4  &kp N5  &kp N6  &trans      &kp MINUS
+&trans      &trans          &trans          &trans      &trans          &trans      &trans  &trans  &kp EQUAL   &kp N1  &kp N2  &kp N3  &trans      &trans
+
+                                        &trans &trans &trans &to 0 &trans       &trans &kp N0 &kp COMMA &kp DOT  &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                      &kp F6      &kp F7      &kp F8          &kp F9          &kp F10     &trans
-&trans  &kp F11     &kp F12     &trans      &kp DEL     &to LAYERHOP                &trans      &trans      &kp C_AC_COPY   &kp C_AC_PASTE  &trans      &trans
-&to 0   &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHIFT  &trans                      &trans      &kp LEFT    &kp DOWN        &kp UP          &kp RIGHT   &trans
-&trans  &trans      &trans      &trans      &trans     &mo MEDIA  &trans   &trans  &kp INSERT  &kp HOME    &kp PG_DN       &kp PG_UP       &kp END     &trans
+&trans  &trans      &trans          &trans          &trans      &trans                      &trans  &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &kp LG(C)       &kp LG(V)       &kp DEL     &trans                      &trans  &trans      &kp TAB     &trans      &trans      &trans
+&trans  &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHIFT  &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans  &trans      &trans          &to NUM         &to SYM     &to MEDIA  &trans   &trans  &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                        &trans &trans &trans &to 0 &trans       &kp DEL &trans &trans &trans &trans
             >;
@@ -77,23 +88,12 @@
 
         media_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans                          &trans  &trans              &trans          &trans          &trans      &trans
-&trans      &trans          &trans          &trans          &trans          &out OUT_TOG                    &trans  &trans              &kp C_MUTE      &trans          &trans      &trans
-&trans      &sk LGUI        &sk LALT        &sk LCTRL       &sk LSHIFT      &ext_power EP_TOG               &trans  &kp C_PREV          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
-&trans      &trans          &trans          &trans          &trans          &trans          &trans  &trans  &trans  &kp C_PLAY_PAUSE    &kp C_STOP      &trans          &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans                          &trans  &trans      &trans          &trans          &trans      &trans
+&trans      &trans          &trans          &trans          &trans          &out OUT_TOG                    &trans  &trans      &kp C_MUTE      &trans          &trans      &trans
+&trans      &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &ext_power EP_TOG               &trans  &kp C_PREV  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
+&trans      &trans          &trans          &trans          &trans          &trans          &trans  &trans  &trans  &trans      &trans          &trans          &trans      &trans
 
-                                                              &trans &trans &trans &to 0 &trans    &trans &trans &trans &trans &trans
-            >;
-        };
-
-        layerhop_layer {
-            bindings = <
-&trans      &trans  &trans      &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans      &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&to NAV     &trans  &trans      &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans      &trans  &trans  &to MEDIA  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
-
-                        &trans &trans &trans &to SYM &trans       &trans &trans &trans &trans &trans
+                                                              &trans &trans &trans &to 0 &trans    &kp C_STOP &kp C_PLAY_PAUSE &trans &trans &trans
             >;
         };
     };

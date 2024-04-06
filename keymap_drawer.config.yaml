@@ -209,4 +209,6 @@ parse_config:
     LGUI: 'Super'
     RGUI: 'Super'
     LG(LA(LS(LCTRL))): 'Hyper'
+    LG(C): 'Copy'
+    LG(V): 'Paste'
   zmk_combos: {}
