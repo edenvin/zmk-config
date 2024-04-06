@@ -33,7 +33,7 @@
 &mo NAV     &kp A               &kp O       &kp E   &kp U   &kp I                       &kp D   &kp H   &kp T   &kp N   &kp S   &kp MINUS
 &kp LSHIFT  &kp SEMICOLON       &kp Q       &kp J   &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W   &kp V   &kp Z   &kp RSHIFT
 
-                              &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp LG(LA(LCTRL)) &kp RGUI
+                              &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp LG(LA(LS(LCTRL))) &kp RGUI
                         >;
                 };
 
@@ -42,7 +42,7 @@
 &trans      &trans      &trans      &trans      &trans      &trans                      &trans      &trans  &trans  &trans  &trans      &kp PLUS
 &trans      &kp EU_ADIA    &kp EU_ODIA      &kp LPAR    &kp RPAR    &kp PERCENT                 &kp LBRC    &kp N7  &kp N8  &kp N9  &kp RBRC   &kp SLASH
 &kp EQUAL  &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHIFT    &kp QMARK                      &kp LBKT      &kp N4  &kp N5  &kp N6  &kp RBKT   &kp MINUS
-&trans      &kp EU_ARNG &kp PIPE    &kp AT    &kp HASH    &kp EXCL    &trans  &trans  &kp AMPS    &kp N1  &kp N2  &kp N3  &kp ASTRK     &trans
+&trans      &kp EU_ARNG &kp HASH    &kp AT    &kp BACKSLASH    &kp EXCL    &trans  &trans  &kp AMPS    &kp N1  &kp N2  &kp N3  &kp ASTRK     &trans
 
                                         &trans &trans &trans &to 0 &trans       &trans &kp N0 &kp COMMA &trans  &trans
                         >;
@@ -51,7 +51,7 @@
                 nav_layer {
                         bindings = <
 &trans  &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &trans
-&trans  &kp F11    &kp F12  &trans      &kp DEL &to LAYERHOP                      &trans      &trans    &kp K_COPY   &kp K_PASTE   &trans   &trans
+&trans  &kp F11    &kp F12  &trans      &kp DEL &to LAYERHOP                      &trans      &trans    &kp C_AC_COPY   &kp C_AC_PASTE   &trans   &trans
 &to 0  &sk LGUI        &sk LALT    &sk LCTRL   &sk LSHIFT  &trans              &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT &trans
 &trans  &trans          &trans  &trans      &trans  &mo MEDIA  &trans      &trans  &kp INSERT  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END   &trans
 
