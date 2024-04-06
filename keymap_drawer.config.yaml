@@ -196,5 +196,8 @@ parse_config:
     C_PLAY_PAUSE: '⏯'
     C_STOP: '◼'
     C_VOL_UP: 'Vol ▲'
-    C_VOL_DOWN: 'Vol ▼'
+    C_VOL_DN: 'Vol ▼'
+    RET: '↵'
+    BSPC: '⌫'
+    DEL: '⌦'
   zmk_combos: {}
