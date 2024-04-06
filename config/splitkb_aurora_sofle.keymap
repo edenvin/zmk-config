@@ -39,10 +39,10 @@
 
         default_layer {
             bindings = <
-&kp GRAVE   &kp N1              &kp N2      &kp N3  &kp N4          &kp N5                      &kp N6  &kp N7          &kp N8  &kp N9  &kp N0  &kp EQUAL
-&kp TAB     &kp SINGLE_QUOTE    &kp COMMA   &kp DOT &kp P           &kp Y                       &kp F   &kp G           &kp C   &kp R   &kp L   &kp SLASH
-&mo NAV     &kp A               &kp O       &kp E   &hm LSHIFT U    &kp I                       &kp D   &hm RSHIFT H    &kp T   &kp N   &kp S   &kp MINUS
-&kp LSHIFT  &kp SEMICOLON       &kp Q       &kp J   &kp K   &kp X   &kp A       &kp A   &kp B   &kp M   &kp W           &kp V   &kp Z   &kp RSHIFT
+&kp GRAVE   &kp N1              &kp N2      &kp N3          &kp N4          &kp N5                  &kp N6  &kp N7          &kp N8          &kp N9      &kp N0      &kp EQUAL
+&kp TAB     &kp SINGLE_QUOTE    &kp COMMA   &kp DOT         &kp P           &kp Y                   &kp F   &kp G           &kp C           &kp R       &kp L       &kp SLASH
+&mo NAV     &hm LGUI A          &hm LALT O  &hm LCTRL E     &hm LSHIFT U    &kp I                   &kp D   &hm RSHIFT H    &hm RCTRL T     &hm RALT N  &hm RGUI S  &kp MINUS
+&kp LSHIFT  &kp SEMICOLON       &kp Q       &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V       &kp Z       &kp RSHIFT
 
                               &kp LCTRL &kp LALT &kp LGUI &mo SYM &kp RET       &kp ESC &kp SPACE &kp BSPC &kp LG(LA(LS(LCTRL))) &kp RGUI
             >;
