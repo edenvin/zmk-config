@@ -40,7 +40,7 @@ parse_config:
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
-    t: ▽
+    t: ''
     type: trans
   mark_alternate_layer_activators: false
   qmk_remove_keycode_prefix:
@@ -178,8 +178,23 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    EU_ADIA: 'Ä'
-    EU_ODIA: 'Ö'
-    EU_ARNG: 'Å'
+    # My own custom mappings
+    LA(A): 'Ä'
+    LA(O): 'Ö'
+    LA(W): 'Å'
     TAB: 'Tab'
+    ESC: 'Esc'
+    AC_COPY: 'Copy'
+    AC_PASTE: 'Paste'
+    LEFT: '◀'
+    RIGHT: '▶'
+    UP: '▲'
+    DOWN: '▼'
+    C_MUTE: '🔇'
+    C_PREV: '⏮'
+    C_NEXT: '⏭'
+    C_PLAY_PAUSE: '⏯'
+    C_STOP: '◼'
+    C_VOL_UP: 'Vol ▲'
+    C_VOL_DOWN: 'Vol ▼'
   zmk_combos: {}
