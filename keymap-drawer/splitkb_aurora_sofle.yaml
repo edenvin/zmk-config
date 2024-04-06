@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', Tab, '''', ',', ., P, Y, F, G, C, R, L, /, nav, A, O, E, U, I, D, H, T, N, S, '-', LSHIFT,
-    ;, Q, J, K, X, A, A, B, M, W, V, Z, RSHIFT, LCTRL, LALT, LGUI, symbols, RET, Esc, SPACE, BSPC, LG(LA(LS(LCTRL))), RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', Tab, '''', ',', ., P, Y, F, G, C, R, L, /, nav, A, O, E, U, I, D, H, T, N, S, '-', Shift,
+    ;, Q, J, K, X, A, A, B, M, W, V, Z, Shift, Ctrl, Alt, Super, symbols, ↵, Esc, SPACE, ⌫, Hyper, Super]
   symbols:
   - {type: trans}
   - {type: trans}
@@ -28,10 +28,10 @@ layers:
   - '}'
   - /
   - '='
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHIFT, h: sticky}
+  - {t: Super, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - '?'
   - '['
   - '4'
@@ -80,7 +80,7 @@ layers:
   - F11
   - F12
   - {type: trans}
-  - DEL
+  - ⌦
   - {t: layerhop, h: toggle}
   - {type: trans}
   - {type: trans}
@@ -89,10 +89,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {t: default, h: toggle, type: held}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHIFT, h: sticky}
+  - {t: Super, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - {type: trans}
   - {type: trans}
   - ◀
@@ -119,7 +119,7 @@ layers:
   - {type: trans}
   - {t: default, h: toggle}
   - {type: trans}
-  - DEL
+  - ⌦
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -150,14 +150,14 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - {t: LGUI, h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - {t: LSHIFT, h: sticky}
+  - {t: Super, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - EP TOG
   - {type: trans}
   - ⏮
-  - VOL DN
+  - Vol ▼
   - Vol ▲
   - ⏭
   - {type: trans}
