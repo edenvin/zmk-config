@@ -1,7 +1,66 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  base: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', Tab, '''', ',', ., P, Y, F, G, C, R, L, /, nav, A, O, E, U, I, D, H, T, N, S, '-', Shift, ;,
-    Q, J, K, X, A, A, B, M, W, V, Z, Shift, Ctrl, Alt, Super, sym, ↵, Esc, SPACE, ⌫, Hyper, Super]
+  base:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '='
+  - Tab
+  - ''''
+  - ','
+  - .
+  - P
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - /
+  - {t: Esc, h: nav}
+  - {t: A, h: Super}
+  - {t: O, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: U, h: Shift}
+  - I
+  - D
+  - {t: H, h: Shift}
+  - {t: T, h: Ctrl}
+  - {t: N, h: Alt}
+  - {t: S, h: Super}
+  - '-'
+  - Shift
+  - ;
+  - Q
+  - J
+  - K
+  - X
+  - A
+  - A
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - Shift
+  - Ctrl
+  - Alt
+  - Super
+  - nav
+  - {t: ↵, h: sym}
+  - ⌫
+  - SPACE
+  - {t: ⌫, h: sym}
+  - Hyper
+  - Super
   sym:
   - {type: trans}
   - {type: trans}
@@ -56,8 +115,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle, type: held}
-  - {type: trans}
+  - {t: base, h: toggle}
+  - {type: held}
   - {type: trans}
   - '0'
   - ','
@@ -142,7 +201,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - OUT TOG
   - {type: trans}
   - {type: trans}
   - 🔇
@@ -166,7 +225,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: OUT TOG, type: held}
+  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
