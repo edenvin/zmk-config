@@ -200,4 +200,13 @@ parse_config:
     RET: '↵'
     BSPC: '⌫'
     DEL: '⌦'
+    LSHIFT: 'Shift'
+    RSHIFT: 'Shift'
+    LCTRL: 'Ctrl'
+    RCTRL: 'Ctrl'
+    LALT: 'Alt'
+    RALT: 'Alt'
+    LGUI: 'Super'
+    RGUI: 'Super'
+    LG(LA(LS(LCTRL))): 'Hyper'
   zmk_combos: {}
