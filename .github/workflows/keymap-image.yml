@@ -10,6 +10,6 @@ jobs:
       keymap_patterns: "config/splitkb_aurora_sofle.keymap"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      parse_args: "--layer-names base sym nav media layerhop"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      parse_args: "splitkb_aurora_sofle:'--layer-names base sym nav media layhop'"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       commit_message: "Generate keymap image"
