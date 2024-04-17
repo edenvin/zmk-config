@@ -216,4 +216,12 @@ parse_config:
     RET: "↵"
     BSPC: "⌫"
     DEL: "⌦"
+    LCTRL: ⌃
+    RCTRL: ⌃
+    LSHIFT: ⇧
+    RSHIFT: ⇧
+    LALT: ⎇
+    RALT: ⎇
+    LGUI: ⌘
+    RGUI: ⌘
   zmk_combos: {}
