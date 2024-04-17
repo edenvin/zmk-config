@@ -26,18 +26,18 @@ layers:
   - L
   - /
   - {t: Esc, h: nav}
-  - {t: A, h: Shift}
-  - {t: O, h: Ctrl}
-  - {t: E, h: Alt}
-  - {t: U, h: Super}
+  - {t: A, h: LSHIFT}
+  - {t: O, h: LCTRL}
+  - {t: E, h: LALT}
+  - {t: U, h: LGUI}
   - I
   - D
-  - {t: H, h: Super}
-  - {t: T, h: Alt}
-  - {t: N, h: Ctrl}
-  - {t: S, h: Shift}
+  - {t: H, h: RGUI}
+  - {t: T, h: RALT}
+  - {t: N, h: RCTRL}
+  - {t: S, h: RSHIFT}
   - '-'
-  - Shift
+  - LSHIFT
   - ;
   - Q
   - J
@@ -50,17 +50,17 @@ layers:
   - W
   - V
   - Z
-  - Shift
-  - Ctrl
-  - Alt
-  - Super
+  - RSHIFT
+  - LCTRL
+  - LALT
+  - LGUI
   - nav
   - {t: ↵, h: num}
   - ⌫
   - SPACE
   - sym
-  - Gui+Alt+Sft+ Ctrl
-  - Super
+  - Gui+Alt+Sft+ LCTRL
+  - RGUI
   sym:
   - {type: trans}
   - {type: trans}
@@ -87,19 +87,19 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - Alt+ A
-  - Alt+ O
+  - Ä
+  - Ö
   - '['
   - ']'
   - '?'
   - +
-  - Super
-  - Alt
-  - Ctrl
-  - Shift
+  - RGUI
+  - RALT
+  - RCTRL
+  - RSHIFT
   - {type: trans}
   - {type: trans}
-  - Alt+ W
+  - Å
   - '#'
   - '{'
   - '}'
@@ -148,10 +148,10 @@ layers:
   - {type: trans}
   - /
   - {t: nav, h: toggle}
-  - Shift
-  - Ctrl
-  - Alt
-  - Super
+  - LSHIFT
+  - LCTRL
+  - LALT
+  - LGUI
   - {type: trans}
   - +
   - '4'
@@ -198,8 +198,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - Gui+ C
-  - Gui+ V
+  - Copy
+  - Paste
   - ⌦
   - {type: trans}
   - {type: trans}
@@ -209,10 +209,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - Shift
-  - Ctrl
-  - Alt
-  - Super
+  - LSHIFT
+  - LCTRL
+  - LALT
+  - LGUI
   - media
   - {type: trans}
   - ◀
@@ -270,10 +270,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - Shift
-  - Ctrl
-  - Alt
-  - Super
+  - LSHIFT
+  - LCTRL
+  - LALT
+  - LGUI
   - {t: EP TOG, type: held}
   - {type: trans}
   - ⏮
