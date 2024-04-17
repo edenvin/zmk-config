@@ -42,6 +42,20 @@ parse_config:
     "&kp EU_ARNG": "Å"
     "&kp LG(C)": "Copy"
     "&kp LG(V)": "Paste"
+  modifier_fn_map:
+    left_ctrl: ⌃
+    right_ctrl: ⌃
+    left_shift: ⇧
+    right_shift: ⇧
+    left_alt: ⎇
+    right_alt: ⎇
+    left_gui: ⌘
+    right_gui: ⌘
+    keycode_combiner: "{mods}+ {key}"
+    mod_combiner: "{mod_1}+{mod_2}"
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
