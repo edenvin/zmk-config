@@ -62,7 +62,7 @@
 &lt NAV ESC     &hml LGUI A         &hml LALT O     &hml LCTRL E    &hml LSHIFT U   &kp I                   &kp D   &hmr RSHIFT H   &hmr RCTRL T    &hmr RALT N &hmr RGUI S &kp MINUS
 &kp LSHIFT      &kp SEMICOLON       &kp Q           &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V       &kp Z       &kp RSHIFT
 
-                              &kp LCTRL &kp LALT &kp LGUI &mo NAV &lt NUM RET       &kp BSPC &kp SPACE &lt SYM BSPC &kp LG(LA(LS(LCTRL))) &kp RGUI
+                              &kp LCTRL &kp LALT &kp LGUI &mo NAV &lt NUM RET       &kp BSPC &kp SPACE &mo SYM &kp LG(LA(LS(LCTRL))) &kp RGUI
             >;
         };
 
@@ -70,8 +70,8 @@
             bindings = <
 &trans      &trans          &trans          &trans      &trans      &trans                      &trans      &trans      &trans          &trans      &trans      &trans
 &trans      &kp PERCENT     &kp AT          &kp LPAR    &kp RPAR    &kp AMPS                    &kp ASTRK   &kp PIPE    &kp BACKSLASH   &trans      &trans      &trans
-&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBRC    &kp RBRC    &kp QMARK                   &kp PLUS    &kp RSHIFT  &kp RCTRL       &kp RALT    &kp RGUI    &trans
-&trans      &kp EU_ARNG     &kp HASH        &kp LBKT    &kp RBKT    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
+&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBKT    &kp RBKT    &kp QMARK                   &kp PLUS    &kp RSHIFT  &kp RCTRL       &kp RALT    &kp RGUI    &trans
+&trans      &kp EU_ARNG     &kp HASH        &kp LBRC    &kp RBRC    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
 
                                         &trans &trans &trans &to 0 &trans       &trans &trans &trans &trans  &trans
             >;
