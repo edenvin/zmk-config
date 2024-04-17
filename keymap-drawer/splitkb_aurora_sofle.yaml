@@ -59,7 +59,7 @@ layers:
   - ⌫
   - SPACE
   - sym
-  - Gui+Alt+Sft+ LCTRL
+  - ⌘+⎇+⇧+ LCTRL
   - RGUI
   sym:
   - {type: trans}
