@@ -59,7 +59,7 @@ layers:
   - ⌫
   - SPACE
   - sym
-  - ⌘+⎇+⇧+ ⌃
+  - Hyper
   - ⌘
   sym:
   - {type: trans}
