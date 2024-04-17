@@ -27,7 +27,7 @@ draw_config:
     rel_h: 12
     rx: 4
     ry: 4
-  svg_extra_style: ''
+  svg_extra_style: ""
   shrink_wide_legends: 7
   glyph_tap_size: 14
   glyph_hold_size: 12
@@ -36,57 +36,62 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
+  raw_binding_map:
+    "&kp EU_ADIA": "Ä"
+    "&kp EU_ODIA": "Ö"
+    "&kp EU_ARNG": "Å"
+    "&kp LG(C)": "Copy"
+    "&kp LG(V)": "Paste"
   sticky_label: sticky
   toggle_label: toggle
   trans_legend:
-    t: ''
+    t: ""
     type: trans
   mark_alternate_layer_activators: false
   qmk_remove_keycode_prefix:
-  - KC_
+    - KC_
   qmk_keycode_map:
-    XXXXXXX: ''
-    'NO': ''
-    MINUS: '-'
-    MINS: '-'
-    EQUAL: '='
-    EQL: '='
-    LEFT_BRACKET: '['
-    LBRC: '['
-    RIGHT_BRACKET: ']'
-    RBRC: ']'
+    XXXXXXX: ""
+    "NO": ""
+    MINUS: "-"
+    MINS: "-"
+    EQUAL: "="
+    EQL: "="
+    LEFT_BRACKET: "["
+    LBRC: "["
+    RIGHT_BRACKET: "]"
+    RBRC: "]"
     BACKSLASH: \
     BSLS: \
-    NONUS_HASH: '#'
-    NUHS: '#'
+    NONUS_HASH: "#"
+    NUHS: "#"
     SEMICOLON: ;
     SCLN: ;
-    QUOTE: ''''
-    QUOT: ''''
-    GRAVE: '`'
-    GRV: '`'
-    COMMA: ','
-    COMM: ','
+    QUOTE: "'"
+    QUOT: "'"
+    GRAVE: "`"
+    GRV: "`"
+    COMMA: ","
+    COMM: ","
     DOT: .
     SLASH: /
     SLSH: /
-    TILDE: '~'
-    TILD: '~'
-    EXCLAIM: '!'
-    EXLM: '!'
-    AT: '@'
-    HASH: '#'
+    TILDE: "~"
+    TILD: "~"
+    EXCLAIM: "!"
+    EXLM: "!"
+    AT: "@"
+    HASH: "#"
     DOLLAR: $
     DLR: $
-    PERCENT: '%'
-    PERC: '%'
+    PERCENT: "%"
+    PERC: "%"
     CIRCUMFLEX: ^
     CIRC: ^
-    AMPERSAND: '&'
-    AMPR: '&'
-    ASTERISK: '*'
-    ASTR: '*'
+    AMPERSAND: "&"
+    AMPR: "&"
+    ASTERISK: "*"
+    ASTR: "*"
     LEFT_PAREN: (
     LPRN: (
     RIGHT_PAREN: )
@@ -94,121 +99,107 @@ parse_config:
     UNDERSCORE: _
     UNDS: _
     PLUS: +
-    LEFT_CURLY_BRACE: '{'
-    LCBR: '{'
-    RIGHT_CURLY_BRACE: '}'
-    RCBR: '}'
-    PIPE: '|'
-    COLON: ':'
-    COLN: ':'
+    LEFT_CURLY_BRACE: "{"
+    LCBR: "{"
+    RIGHT_CURLY_BRACE: "}"
+    RCBR: "}"
+    PIPE: "|"
+    COLON: ":"
+    COLN: ":"
     DOUBLE_QUOTE: '"'
     DQUO: '"'
     DQT: '"'
     LEFT_ANGLE_BRACKET: <
     LABK: <
     LT: <
-    RIGHT_ANGLE_BRACKET: '>'
-    RABK: '>'
-    GT: '>'
-    QUESTION: '?'
-    QUES: '?'
+    RIGHT_ANGLE_BRACKET: ">"
+    RABK: ">"
+    GT: ">"
+    QUESTION: "?"
+    QUES: "?"
   zmk_remove_keycode_prefix: []
   zmk_keycode_map:
-    EXCLAMATION: '!'
-    EXCL: '!'
-    AT_SIGN: '@'
-    AT: '@'
-    HASH: '#'
-    POUND: '#'
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
     DOLLAR: $
     DLLR: $
-    PERCENT: '%'
-    PRCNT: '%'
+    PERCENT: "%"
+    PRCNT: "%"
     CARET: ^
-    AMPERSAND: '&'
-    AMPS: '&'
-    ASTERISK: '*'
-    ASTRK: '*'
-    STAR: '*'
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
     LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
-    EQUAL: '='
+    EQUAL: "="
     PLUS: +
-    MINUS: '-'
+    MINUS: "-"
     UNDERSCORE: _
     UNDER: _
     SLASH: /
     FSLH: /
-    QUESTION: '?'
-    QMARK: '?'
+    QUESTION: "?"
+    QMARK: "?"
     BACKSLASH: \
     BSLH: \
-    PIPE: '|'
+    PIPE: "|"
     NON_US_BACKSLASH: \
-    PIPE2: '|'
-    NON_US_BSLH: '|'
+    PIPE2: "|"
+    NON_US_BSLH: "|"
     SEMICOLON: ;
     SEMI: ;
-    COLON: ':'
-    SINGLE_QUOTE: ''''
-    SQT: ''''
-    APOSTROPHE: ''''
-    APOS: ''''
+    COLON: ":"
+    SINGLE_QUOTE: "'"
+    SQT: "'"
+    APOSTROPHE: "'"
+    APOS: "'"
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA: ','
+    COMMA: ","
     LESS_THAN: <
     LT: <
     PERIOD: .
     DOT: .
-    GREATER_THAN: '>'
-    GT: '>'
-    LEFT_BRACKET: '['
-    LBKT: '['
-    LEFT_BRACE: '{'
-    LBRC: '{'
-    RIGHT_BRACKET: ']'
-    RBKT: ']'
-    RIGHT_BRACE: '}'
-    RBRC: '}'
-    GRAVE: '`'
-    TILDE: '~'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    TILDE2: '~'
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET: "["
+    LBKT: "["
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET: "]"
+    RBKT: "]"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
     # My own custom mappings
-    LA(A): 'Ä'
-    LA(O): 'Ö'
-    LA(W): 'Å'
-    TAB: 'Tab'
-    ESC: 'Esc'
-    AC_COPY: 'Copy'
-    AC_PASTE: 'Paste'
-    LEFT: '◀'
-    RIGHT: '▶'
-    UP: '▲'
-    DOWN: '▼'
-    C_MUTE: '🔇'
-    C_PREV: '⏮'
-    C_NEXT: '⏭'
-    C_PLAY_PAUSE: '⏯'
-    C_STOP: '◼'
-    C_VOL_UP: 'Vol ▲'
-    C_VOL_DN: 'Vol ▼'
-    RET: '↵'
-    BSPC: '⌫'
-    DEL: '⌦'
-    LSHIFT: 'Shift'
-    RSHIFT: 'Shift'
-    LCTRL: 'Ctrl'
-    RCTRL: 'Ctrl'
-    LALT: 'Alt'
-    RALT: 'Alt'
-    LGUI: 'Super'
-    RGUI: 'Super'
-    LG(LA(LS(LCTRL))): 'Hyper'
-    LG(C): 'Copy'
-    LG(V): 'Paste'
+    TAB: "Tab"
+    ESC: "Esc"
+    AC_COPY: "Copy"
+    AC_PASTE: "Paste"
+    LEFT: "◀"
+    RIGHT: "▶"
+    UP: "▲"
+    DOWN: "▼"
+    C_MUTE: "🔇"
+    C_PREV: "⏮"
+    C_NEXT: "⏭"
+    C_PLAY_PAUSE: "⏯"
+    C_STOP: "◼"
+    C_VOL_UP: "Vol ▲"
+    C_VOL_DN: "Vol ▼"
+    RET: "↵"
+    BSPC: "⌫"
+    DEL: "⌦"
   zmk_combos: {}
