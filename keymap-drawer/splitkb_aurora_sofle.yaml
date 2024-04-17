@@ -26,18 +26,18 @@ layers:
   - L
   - /
   - {t: Esc, h: nav}
-  - {t: A, h: LSHIFT}
-  - {t: O, h: LCTRL}
-  - {t: E, h: LALT}
-  - {t: U, h: LGUI}
+  - {t: A, h: ⇧}
+  - {t: O, h: ⌃}
+  - {t: E, h: ⎇}
+  - {t: U, h: ⌘}
   - I
   - D
-  - {t: H, h: RGUI}
-  - {t: T, h: RALT}
-  - {t: N, h: RCTRL}
-  - {t: S, h: RSHIFT}
+  - {t: H, h: ⌘}
+  - {t: T, h: ⎇}
+  - {t: N, h: ⌃}
+  - {t: S, h: ⇧}
   - '-'
-  - LSHIFT
+  - ⇧
   - ;
   - Q
   - J
@@ -50,17 +50,17 @@ layers:
   - W
   - V
   - Z
-  - RSHIFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
   - nav
   - {t: ↵, h: num}
   - ⌫
   - SPACE
   - sym
-  - ⌘+⎇+⇧+ LCTRL
-  - RGUI
+  - ⌘+⎇+⇧+ ⌃
+  - ⌘
   sym:
   - {type: trans}
   - {type: trans}
@@ -93,10 +93,10 @@ layers:
   - ']'
   - '?'
   - +
-  - RGUI
-  - RALT
-  - RCTRL
-  - RSHIFT
+  - ⌘
+  - ⎇
+  - ⌃
+  - ⇧
   - {type: trans}
   - {type: trans}
   - Å
@@ -148,10 +148,10 @@ layers:
   - {type: trans}
   - /
   - {t: nav, h: toggle}
-  - LSHIFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
   - {type: trans}
   - +
   - '4'
@@ -209,10 +209,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - LSHIFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
   - media
   - {type: trans}
   - ◀
@@ -270,10 +270,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - LSHIFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
   - {t: EP TOG, type: held}
   - {type: trans}
   - ⏮
