@@ -26,16 +26,16 @@ layers:
   - L
   - /
   - {t: Esc, h: nav}
-  - {t: A, h: Super}
-  - {t: O, h: Alt}
-  - {t: E, h: Ctrl}
-  - {t: U, h: Shift}
+  - {t: A, h: Shift}
+  - {t: O, h: Ctrl}
+  - {t: E, h: Alt}
+  - {t: U, h: Super}
   - I
   - D
-  - {t: H, h: Shift}
-  - {t: T, h: Ctrl}
-  - {t: N, h: Alt}
-  - {t: S, h: Super}
+  - {t: H, h: Super}
+  - {t: T, h: Alt}
+  - {t: N, h: Ctrl}
+  - {t: S, h: Shift}
   - '-'
   - Shift
   - ;
@@ -58,8 +58,8 @@ layers:
   - {t: ↵, h: num}
   - ⌫
   - SPACE
-  - {t: ⌫, h: sym}
-  - Hyper
+  - sym
+  - Gui+Alt+Sft+ Ctrl
   - Super
   sym:
   - {type: trans}
@@ -87,22 +87,22 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - Ä
-  - Ö
-  - '{'
-  - '}'
-  - '?'
-  - +
-  - Shift
-  - Ctrl
-  - Alt
-  - Super
-  - {type: trans}
-  - {type: trans}
-  - Å
-  - '#'
+  - Alt+ A
+  - Alt+ O
   - '['
   - ']'
+  - '?'
+  - +
+  - Super
+  - Alt
+  - Ctrl
+  - Shift
+  - {type: trans}
+  - {type: trans}
+  - Alt+ W
+  - '#'
+  - '{'
+  - '}'
   - '!'
   - {type: trans}
   - {type: trans}
@@ -148,10 +148,10 @@ layers:
   - {type: trans}
   - /
   - {t: nav, h: toggle}
-  - Super
-  - Alt
-  - Ctrl
   - Shift
+  - Ctrl
+  - Alt
+  - Super
   - {type: trans}
   - +
   - '4'
@@ -198,8 +198,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - Copy
-  - Paste
+  - Gui+ C
+  - Gui+ V
   - ⌦
   - {type: trans}
   - {type: trans}
@@ -209,10 +209,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - Super
-  - Alt
-  - Ctrl
   - Shift
+  - Ctrl
+  - Alt
+  - Super
   - media
   - {type: trans}
   - ◀
@@ -270,10 +270,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - Super
-  - Alt
-  - Ctrl
   - Shift
+  - Ctrl
+  - Alt
+  - Super
   - {t: EP TOG, type: held}
   - {type: trans}
   - ⏮
