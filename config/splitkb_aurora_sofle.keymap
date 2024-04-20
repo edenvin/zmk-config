@@ -57,10 +57,10 @@
 
         default_layer {
             bindings = <
-&kp GRAVE       &kp N1              &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6  &kp N7          &kp N8          &kp N9          &kp N0          &kp EQUAL
-&kp TAB         &kp SINGLE_QUOTE    &kp COMMA       &kp DOT         &kp P           &kp Y                   &kp F   &kp G           &kp C           &kp R           &kp L           &kp SLASH
-&lt NAV ESC     &hml LSHIFT A       &hml LCTRL O    &hml LALT E     &hml LGUI U     &kp I                   &kp D   &hmr RGUI H     &hmr RALT T     &hmr RCTRL N    &hmr RSHIFT S   &kp MINUS
-&kp LSHIFT      &kp SEMICOLON       &kp Q           &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V           &kp Z           &kp RSHIFT
+&kp GRAVE       &kp N1              &kp N2          &kp N3          &kp N4          &kp N5                  &kp N6  &kp N7          &kp N8          &kp N9      &kp N0      &kp EQUAL
+&kp TAB         &kp SINGLE_QUOTE    &kp COMMA       &kp DOT         &kp P           &kp Y                   &kp F   &kp G           &kp C           &kp R       &kp L       &kp SLASH
+&lt NAV ESC     &hml LGUI A         &hml LALT O     &hml LCTRL E    &hml LSHIFT U   &kp I                   &kp D   &hmr RSHIFT H   &hmr RCTRL T    &hmr RALT N &hmr RGUI S &kp MINUS
+&kp LSHIFT      &kp SEMICOLON       &kp Q           &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V       &kp Z       &kp RSHIFT
 
                               &kp LCTRL &kp LALT &kp LGUI &mo NAV &lt NUM RET       &kp BSPC &kp SPACE &mo SYM &kp LG(LA(LS(LCTRL))) &kp RGUI
             >;
@@ -70,7 +70,7 @@
             bindings = <
 &trans      &trans          &trans          &trans      &trans      &trans                      &trans      &trans      &trans          &trans      &trans      &trans
 &trans      &kp PERCENT     &kp AT          &kp LPAR    &kp RPAR    &kp AMPS                    &kp ASTRK   &kp PIPE    &kp BACKSLASH   &trans      &trans      &trans
-&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBKT    &kp RBKT    &kp QMARK                   &kp PLUS    &kp RGUI    &kp RALT        &kp RCTRL   &kp RSHIFT  &trans
+&trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBKT    &kp RBKT    &kp QMARK                   &kp PLUS    &kp RSHIFT  &kp RCTRL       &kp RALT    &kp RGUI    &trans
 &trans      &kp EU_ARNG     &kp HASH        &kp LBRC    &kp RBRC    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
 
                                         &trans &trans &trans &to 0 &trans       &trans &trans &trans &trans  &trans
@@ -81,7 +81,7 @@
             bindings = <
 &trans      &kp F1          &kp F2          &kp F3      &kp F4          &kp F5                      &kp F6      &kp F7  &kp F8  &kp F9  &kp F10     &kp PLUS
 &trans      &kp F11         &kp F12         &kp LPAR    &kp RPAR        &trans                      &kp ASTRK   &kp N7  &kp N8  &kp N9  &trans      &kp SLASH
-&to NAV     &kp LSHIFT      &kp LCTRL       &kp LALT    &kp LGUI        &trans                      &kp PLUS    &kp N4  &kp N5  &kp N6  &trans      &kp MINUS
+&to NAV     &kp LGUI        &kp LALT        &kp LCTRL   &kp LSHIFT      &trans                      &kp PLUS    &kp N4  &kp N5  &kp N6  &trans      &kp MINUS
 &trans      &trans          &trans          &trans      &trans          &trans      &trans  &trans  &kp EQUAL   &kp N1  &kp N2  &kp N3  &trans      &trans
 
                                         &trans &trans &trans &to 0 &trans       &trans &kp N0 &kp COMMA &kp DOT  &trans
@@ -90,10 +90,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans      &trans      &trans      &trans      &trans                      &trans  &trans      &trans      &trans      &trans      &trans
-&trans  &trans      &kp LG(C)   &kp LG(V)   &kp DEL     &trans                      &trans  &trans      &kp TAB     &trans      &trans      &trans
-&trans  &kp LSHIFT  &kp LCTRL   &kp LALT    &kp LGUI    &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans  &trans      &trans      &to NUM     &to SYM     &to MEDIA  &trans   &trans  &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans  &trans      &trans          &trans          &trans      &trans                      &trans  &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &kp LG(C)       &kp LG(V)       &kp DEL     &trans                      &trans  &trans      &kp TAB     &trans      &trans      &trans
+&trans  &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHIFT  &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans  &trans      &trans          &to NUM         &to SYM     &to MEDIA  &trans   &trans  &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 
                                        &trans &trans &trans &to 0 &trans       &kp DEL &trans &trans &trans &trans
             >;
@@ -103,7 +103,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans                          &trans  &trans      &trans          &trans          &trans      &trans
 &trans      &trans          &trans          &trans          &trans          &out OUT_TOG                    &trans  &trans      &kp C_MUTE      &trans          &trans      &trans
-&trans      &kp LSHIFT      &kp LCTRL       &kp LALT        &kp LGUI        &ext_power EP_TOG               &trans  &kp C_PREV  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
+&trans      &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &ext_power EP_TOG               &trans  &kp C_PREV  &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT  &trans
 &trans      &trans          &trans          &trans          &trans          &trans          &trans  &trans  &trans  &trans      &trans          &trans          &trans      &trans
 
                                                               &trans &trans &trans &to 0 &trans    &kp C_STOP &kp C_PLAY_PAUSE &trans &trans &trans
