@@ -26,16 +26,16 @@ layers:
   - L
   - /
   - {t: Esc, h: nav}
-  - {t: A, h: ⇧}
-  - {t: O, h: ⌃}
-  - {t: E, h: ⎇}
-  - {t: U, h: ⌘}
+  - {t: A, h: ⌘}
+  - {t: O, h: ⎇}
+  - {t: E, h: ⌃}
+  - {t: U, h: ⇧}
   - I
   - D
-  - {t: H, h: ⌘}
-  - {t: T, h: ⎇}
-  - {t: N, h: ⌃}
-  - {t: S, h: ⇧}
+  - {t: H, h: ⇧}
+  - {t: T, h: ⌃}
+  - {t: N, h: ⎇}
+  - {t: S, h: ⌘}
   - '-'
   - ⇧
   - ;
@@ -54,11 +54,11 @@ layers:
   - ⌃
   - ⎇
   - ⌘
-  - nav
+  - sym
   - {t: ↵, h: num}
   - ⌫
   - SPACE
-  - sym
+  - nav
   - Hyper
   - ⌘
   sym:
@@ -93,10 +93,10 @@ layers:
   - ']'
   - '?'
   - +
-  - ⌘
-  - ⎇
-  - ⌃
   - ⇧
+  - ⌃
+  - ⎇
+  - ⌘
   - {type: trans}
   - {type: trans}
   - Å
@@ -115,11 +115,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
   num:
@@ -148,10 +148,10 @@ layers:
   - {type: trans}
   - /
   - {t: nav, h: toggle}
-  - ⇧
-  - ⌃
-  - ⎇
   - ⌘
+  - ⎇
+  - ⌃
+  - ⇧
   - {type: trans}
   - +
   - '4'
@@ -209,10 +209,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - ⇧
-  - ⌃
-  - ⎇
   - ⌘
+  - ⎇
+  - ⌃
+  - ⇧
   - media
   - {type: trans}
   - ◀
@@ -237,11 +237,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - ⌦
   - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
   media:
@@ -270,10 +270,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  - ⇧
-  - ⌃
-  - ⎇
   - ⌘
+  - ⎇
+  - ⌃
+  - ⇧
   - {t: EP TOG, type: held}
   - {type: trans}
   - ⏮
@@ -298,10 +298,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - ◼
   - ⏯
-  - {type: trans}
+  - {t: base, h: toggle}
   - {type: trans}
   - {type: trans}
