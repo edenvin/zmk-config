@@ -69,9 +69,9 @@
         symbols_layer {
             bindings = <
 &trans      &trans          &trans          &trans      &trans      &trans                      &trans      &trans      &trans          &trans      &trans      &trans
-&trans      &kp PERCENT     &kp AT          &kp LPAR    &kp RPAR    &kp AMPS                    &kp ASTRK   &kp PIPE    &kp BACKSLASH   &trans      &trans      &trans
+&trans      &kp PERCENT     &kp AT          &kp LBRC    &kp RBRC    &kp AMPS                    &kp ASTRK   &kp PIPE    &kp BACKSLASH   &trans      &trans      &trans
 &trans      &kp EU_ADIA     &kp EU_ODIA     &kp LBKT    &kp RBKT    &kp QMARK                   &kp PLUS    &kp RSHIFT  &kp RCTRL       &kp RALT    &kp RGUI    &trans
-&trans      &kp EU_ARNG     &kp HASH        &kp LBRC    &kp RBRC    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
+&trans      &kp EU_ARNG     &kp HASH        &kp LPAR    &kp RPAR    &kp EXCL    &trans  &trans  &kp EQUAL   &trans      &trans          &trans      &trans      &trans
 
                                         &trans &trans &trans &trans &trans       &trans &trans &to 0 &trans  &trans
             >;
@@ -80,9 +80,9 @@
         numbers_layer {
             bindings = <
 &trans      &kp F1          &kp F2          &kp F3      &kp F4          &kp F5                      &kp F6      &kp F7  &kp F8  &kp F9  &kp F10     &kp PLUS
-&trans      &kp F11         &kp F12         &kp LPAR    &kp RPAR        &trans                      &kp ASTRK   &kp N7  &kp N8  &kp N9  &trans      &kp SLASH
+&trans      &kp F11         &kp F12         &trans      &trans          &trans                      &kp ASTRK   &kp N7  &kp N8  &kp N9  &trans      &kp SLASH
 &to NAV     &kp LGUI        &kp LALT        &kp LCTRL   &kp LSHIFT      &trans                      &kp PLUS    &kp N4  &kp N5  &kp N6  &trans      &kp MINUS
-&trans      &trans          &trans          &trans      &trans          &trans      &trans  &trans  &kp EQUAL   &kp N1  &kp N2  &kp N3  &trans      &trans
+&trans      &trans          &trans          &kp LPAR    &kp RPAR        &trans      &trans  &trans  &kp EQUAL   &kp N1  &kp N2  &kp N3  &trans      &trans
 
                                         &trans &trans &trans &to 0 &trans       &trans &kp N0 &kp COMMA &kp DOT  &trans
             >;
