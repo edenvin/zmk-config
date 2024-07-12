@@ -92,10 +92,10 @@
             bindings = <
 &trans  &trans      &trans          &trans          &trans      &trans                      &trans  &trans      &trans      &trans      &trans      &trans
 &trans  &trans      &kp LG(C)       &kp LG(V)       &kp DEL     &trans                      &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-&trans  &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHIFT  &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&to 0   &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHIFT  &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 &trans  &trans      &trans          &to NUM         &to SYM     &to MEDIA  &trans   &trans  &kp TAB &kp HOME    &kp UP      &trans      &trans      &trans
 
-                                       &trans &trans &trans &trans &trans       &kp DEL &trans &to 0 &trans &trans
+                                       &trans &trans &trans &trans &trans       &kp DEL &trans &kp LEFT &kp DOWN &kp RIGHT
             >;
         };
 
