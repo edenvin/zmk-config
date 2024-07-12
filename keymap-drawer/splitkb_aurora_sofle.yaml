@@ -58,9 +58,9 @@ layers:
   - {t: ↵, h: num}
   - ⌫
   - SPACE
-  - nav
-  - Hyper
-  - ⌘
+  - {t: ◀, h: nav}
+  - ▼
+  - ▶
   sym:
   - {type: trans}
   - {type: trans}
@@ -77,8 +77,8 @@ layers:
   - {type: trans}
   - '%'
   - '@'
-  - (
-  - )
+  - '{'
+  - '}'
   - '&'
   - '*'
   - '|'
@@ -101,8 +101,8 @@ layers:
   - {type: trans}
   - Å
   - '#'
-  - '{'
-  - '}'
+  - (
+  - )
   - '!'
   - {type: trans}
   - {type: trans}
@@ -138,8 +138,8 @@ layers:
   - {type: trans}
   - F11
   - F12
-  - (
-  - )
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - '*'
   - '7'
@@ -162,8 +162,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - (
+  - )
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -203,12 +203,12 @@ layers:
   - ⌦
   - {type: trans}
   - {type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
   - {type: trans}
-  - Tab
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: held}
+  - {t: base, h: toggle, type: held}
   - ⌘
   - ⎇
   - ⌃
@@ -228,11 +228,11 @@ layers:
   - {t: media, h: toggle}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - Tab
   - HOME
-  - PG DN
-  - PG UP
-  - END
+  - ▲
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -241,9 +241,9 @@ layers:
   - {type: trans}
   - ⌦
   - {type: trans}
-  - {t: base, h: toggle}
-  - {type: trans}
-  - {type: trans}
+  - ◀
+  - ▼
+  - ▶
   media:
   - BT CLR
   - {t: BT, h: '0'}
