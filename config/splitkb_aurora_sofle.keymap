@@ -62,7 +62,7 @@
 &lt NAV ESC     &hml LGUI A         &hml LALT O     &hml LCTRL E    &hml LSHIFT U   &kp I                   &kp D   &hmr RSHIFT H   &hmr RCTRL T    &hmr RALT N &hmr RGUI S &kp MINUS
 &kp LSHIFT      &kp SEMICOLON       &kp Q           &kp J           &kp K           &kp X   &kp A   &kp A   &kp B   &kp M           &kp W           &kp V       &kp Z       &kp RSHIFT
 
-                              &kp LCTRL &kp LALT &kp LGUI &mo SYM &lt NUM RET       &kp BSPC &kp SPACE &mo NAV &kp LG(LA(LS(LCTRL))) &kp RGUI
+                              &kp LCTRL &kp LALT &kp LGUI &mo SYM &lt NUM RET       &kp BSPC &kp SPACE &lt NAV LEFT &kp DOWN &kp RIGHT
             >;
         };
 
@@ -91,9 +91,9 @@
         nav_layer {
             bindings = <
 &trans  &trans      &trans          &trans          &trans      &trans                      &trans  &trans      &trans      &trans      &trans      &trans
-&trans  &trans      &kp LG(C)       &kp LG(V)       &kp DEL     &trans                      &trans  &trans      &kp TAB     &trans      &trans      &trans
+&trans  &trans      &kp LG(C)       &kp LG(V)       &kp DEL     &trans                      &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 &trans  &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHIFT  &mo MEDIA                   &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans  &trans      &trans          &to NUM         &to SYM     &to MEDIA  &trans   &trans  &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+&trans  &trans      &trans          &to NUM         &to SYM     &to MEDIA  &trans   &trans  &kp TAB &kp HOME    &kp UP      &trans      &trans      &trans
 
                                        &trans &trans &trans &trans &trans       &kp DEL &trans &to 0 &trans &trans
             >;
