@@ -26,17 +26,17 @@ layers:
   - L
   - /
   - {t: Esc, h: nav}
-  - {t: A, h: ⌘}
-  - {t: O, h: ⎇}
-  - {t: E, h: ⌃}
-  - {t: U, h: ⇧}
+  - A
+  - O
+  - E
+  - U
   - I
   - D
-  - {t: H, h: ⇧}
-  - {t: T, h: ⌃}
-  - {t: N, h: ⎇}
-  - {t: S, h: ⌘}
-  - '-'
+  - H
+  - T
+  - N
+  - S
+  - {t: '-', h: nav}
   - ⇧
   - ;
   - Q
@@ -58,9 +58,9 @@ layers:
   - {t: ↵, h: num}
   - ⌫
   - SPACE
-  - {t: ◀, h: nav}
-  - ▼
-  - ▶
+  - ⌘
+  - ⎇
+  - ⌃
   sym:
   - {type: trans}
   - {type: trans}
@@ -86,7 +86,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - {t: base, h: toggle}
   - Ä
   - Ö
   - '['
@@ -107,9 +107,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - '='
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - '|'
+  - \
+  - ^
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -119,7 +119,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
   num:
@@ -147,7 +147,7 @@ layers:
   - '9'
   - {type: trans}
   - /
-  - {t: nav, h: toggle}
+  - {t: base, h: toggle}
   - ⌘
   - ⎇
   - ⌃
@@ -176,7 +176,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: base, h: toggle}
+  - {t: nav, h: toggle}
   - {type: held}
   - {type: trans}
   - '0'
@@ -269,7 +269,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
+  - {t: base, h: toggle, type: held}
   - ⌘
   - ⎇
   - ⌃
@@ -302,6 +302,6 @@ layers:
   - {type: trans}
   - ◼
   - ⏯
-  - {t: base, h: toggle}
+  - {type: trans}
   - {type: trans}
   - {type: trans}
